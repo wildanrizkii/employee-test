@@ -13,26 +13,26 @@ export async function GET(
   try {
     const { id } = await params;
 
+    let isAuthorized = false;
     const authHeader = req.headers.get("Authorization");
-    if (!authHeader?.startsWith("Bearer ")) {
-      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    }
 
-    const token = authHeader.split(" ")[1];
-    if (!token) {
-      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    }
+    if (authHeader?.startsWith("Bearer ")) {
+      try {
+        const token = authHeader.split(" ")[1];
+        if (!process.env.JWT_SECRET) {
+          throw new Error("JWT_SECRET is not defined");
+        }
 
-    if (!process.env.JWT_SECRET) {
-      throw new Error("JWT_SECRET is not defined");
-    }
+        const secret = new TextEncoder().encode(process.env.JWT_SECRET);
+        const { payload } = await jwtVerify(token, secret);
+        const decoded = payload as unknown as TokenPayload;
 
-    const secret = new TextEncoder().encode(process.env.JWT_SECRET);
-    const { payload } = await jwtVerify(token, secret);
-    const decoded = payload as unknown as TokenPayload;
-
-    if (decoded.participantId !== id) {
-      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+        if (decoded.participantId === id) {
+          isAuthorized = true;
+        }
+      } catch (err) {
+        console.warn("Invalid or expired token:", err);
+      }
     }
 
     const participant = await db.participant.findUnique({
@@ -47,7 +47,17 @@ export async function GET(
       return NextResponse.json({ error: "Not found" }, { status: 404 });
     }
 
-    return NextResponse.json(participant);
+    if (isAuthorized) {
+      // kalau token valid → return full data
+      return NextResponse.json(participant);
+    } else {
+      // kalau nggak ada token / token invalid → return data minimal
+      return NextResponse.json({
+        id: participant.id,
+        fullName: participant.NamaLengkap,
+        nik: participant.NIK,
+      });
+    }
   } catch (error) {
     console.error("API Error:", error);
     return NextResponse.json(
