@@ -1,0 +1,29 @@
+# this file for testing employee API use rest client extension to use it
+@url = http://localhost:3000/api/employee-test
+
+POST {{url}} HTTP/1.1
+content-type: application/json
+
+{
+  "IdDataPelamar": "5d9250c5-8145-4a31-b59f-0db432380510",
+  "NIK": "6516511121212122",
+  "PhoneNumber": "8992732002",
+  "NamaLengkap": "Hilman",
+  "TempatLahir": "sumedang pride",
+  "Email": "dev.hilmarch@gmail.com",
+  "Cabang": "BANDUNG RAYA",
+  "emailCabang": "rekrutmensdmgo@gmail.com",
+  "PelaksanaanTes": "2025-08-13 00:00:00",
+  "Penempatan": "Online",
+  "JenisTes": [
+   "MBTI, DISC, TKD, KETELITIAN"
+  ]
+}
+
+###
+PATCH {{url}}/g1Tl_4Q6Vuo HTTP/1.1
+content-type: application/json
+
+{
+  "status": true
+}

@@ -1,0 +1,19 @@
+@keyframes pulse-timer {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.04);
+        opacity: 1;
+        box-shadow: 0 0 12px rgba(255, 71, 71, 0.5);
+    }
+}
+
+.pulse-timer {
+    animation: pulse-timer 1s ease-in-out infinite;
+}

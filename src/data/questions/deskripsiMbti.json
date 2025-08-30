@@ -1,0 +1,146 @@
+[
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b67"
+        },
+        "tipe": "ISTJ",
+        "arti": "Bertanggung Jawab",
+        "karakter": "Serius,tenang,stabil&damai.Senang pada fakta,logis,obyektif,praktis & realistis.Task oriented,tekun,teratur,menepatijanji,dapat diandalkan bertanggung jawab.Pendengar yang baik,setia,hanya mau berbagi dengan orang dekat.Memegang aturan,standar & prosedur dengan teguh",
+        "saran_profesi": "Manajemen,Polisi,Intelijen,Hakim,Pengacara,Dokter,Akuntan(Staf Keuangan),Programmer,TI,System Analys,Pemimpin Militer"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b68"
+        },
+        "tipe": "ISFJ",
+        "arti": "Setia",
+        "karakter": "Penuh pertimbangan,hati-hati,teliti dan akurat.Serius,tenang,stabil namun sensitif.Ramah,perhatian pada perasaan & kebutuhan orang lain,setia,kooperatif,pendengar yang baik.Punya kemampuan mengorganisasi,detail,teliti,sangat bertanggung jawab & bisa di andalkan",
+        "saran_profesi": "Architect,Interior Designer,Perawat,Administratif,Designer,ChildCare,Konselor,Back Office Manager,Penjaga toko/Perpustakaan,Dunia Perhotelan"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b69"
+        },
+        "tipe": "ISTP",
+        "arti": "Pragmatis",
+        "karakter": "Tenang,pendiam,cenderungkaku,dingin,hati-hati,penuh pertimbangan.Logis,rasional,kritis,obyektif,mampu mengesampingkan perasaan.Mampu menghadapi perubahan mendadak dengan cepat dan tenang.Percaya diri,tegas dan mampu menghadapi perbedaan maupun kritik.Mampu menganalisa,mengorganisir & mendelegasikan.Problem solver yang baik terutama untuk masalah teknis & keadaan mendadak",
+        "saran_profesi": "Polisi,Ahli Forensik,Programmer,Ahli Komputer,System Analyst,Teknisi,Insinyur,Mekanik,Pilot,Atlit,Entrepreneur"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b6a"
+        },
+        "tipe": "ISFP",
+        "arti": "Artistik",
+        "karakter": "Berpikiran simpel & praktis, fleksibel, sensitif, ramah, tidak menonjolkan diri, rendah hati pada kemampuannya.Menghindari konflik, tidak memaksakan pendapat atau nilai-nilainya pada orang lain.Biasanya tidak mau memimpin tetapi menjadi pengikut dan pelaksana yang setia.Seringkali santai menyelesaikan sesuatu, karena sangat menikmati apa yang terjadi saat ini.Menunjukkan perhatian lebih banyak melalui tindakan dibandingkan kata-kata",
+        "saran_profesi": "Seniman,Designer,Pekerja Sosial,Psikolog,Guru,Aktor,Bidang Hospitality"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b6b"
+        },
+        "tipe": "INFJ",
+        "arti": "Reflektif",
+        "karakter": "Perhatian, empati, sensitif & berkomitmen terhadap sebuah hubungan.Sukses karena ketekunan, originalitas dan keinginan kuat untuk melakukan apa saja yang diperlukan termasuk memberikan yg terbaik dalam pekerjaan.Idealis, perfeksionis, memegang teguh prinsip.Visioner, penuh ide, kreatif, suka merenung dan inspiring.  Biasanya diikuti dan dihormati karena kejelasan visi serta dedikasi pada hal-hal baik",
+        "saran_profesi": "Pengajar,Psikolog,Dokter,Konselor,Pekerja Sosial,Fotografer,Seniman,Designer,Child Care"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b6c"
+        },
+        "tipe": "INTJ",
+        "arti": "Independen",
+        "karakter": "Visioner, punya perencanaan praktis, & biasanya memiliki ide-ide original serta dorongan kuat untuk mencapainya.Mandiri dan percaya diri.Punya kemampuan analisa yang bagus serta menyederhanakan sesuatu yang rumit dan abstrak menjadi sesuatu yang praktis, mudah difahami & dipraktekkan.Skeptis, kritis, logis, menentukan (determinatif) dan kadang keras kepala.Punya keinginan untuk berkembang serta selalu ingin lebih maju dari orang lain.Kritik & konflik tidak menjadi masalah berarti",
+        "saran_profesi": "Peneliti,Ilmuan,Insinyur,Teknisi,Pengajar,Profesor,Dokter,Reearch & Development,Business Analyst,System Analyst,Pengacara,Hakim,Programmer,Posisi Strategis dalam Organisasi"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b6d"
+        },
+        "tipe": "INFP",
+        "arti": "Idealis",
+        "karakter": "Sangat perhatian dan peka dengan perasaan orang lain.Penuh dengan antusiasme dan kesetiaan, tapi biasanya hanya untuk orang dekat.Peduli pada banyak hal.Cenderung mengambil terlalu banyak dan menyelesaikan sebagian.Cenderung idealis dan perfeksionis.Berpikir win-win solution, mempercayai dan mengoptimalkan orang lain",
+        "saran_profesi": "Penulis,Sastrawan,Konselor,Psikolog,Pengajar,Seniman,Rohaniawan,Bidang Hospitality"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b6e"
+        },
+        "tipe": "INTP",
+        "arti": "Konseptual",
+        "karakter": "Sangat menghargai intelektualitas dan pengetahuan.Menikmati hal-hal teoritis dan ilmiah.Senang memecahkan masalah dengan logika dan analisa.Diam dan menahan diri.Lebih suka bekerja sendiri.Cenderung kritis, skeptis, mudah curiga dan pesimis.Tidak suka memimpin dan bisa menjadi pengikut yang tidak banyak menuntut.Cenderung memiliki minat yang jelas.Membutuhkan karir dimana minatnya bisa berkembang dan bermanfaat, Jika menemukan sesuatu yang menarik minatnya, ia akan sangat serius dan antusias menekuninya",
+        "saran_profesi": "Ilmuan,Fotografer,Programmer,Ahli Komputer,System Analyst,Penulis Buku Teknis,Ahli Forensik,Jaksa,Pengacara,Teknisi"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b6f"
+        },
+        "tipe": "ESTP",
+        "arti": "Spontan",
+        "karakter": " Spontan, Aktif, Enerjik, Cekatan, Cepat, Sigap, Antusias, Fun dan penuh variasi.Komunikator, asertif, to the point, ceplas-ceplos, berkarisma, punya interpersonal skill yang baik.Baik dalam pemecahan masalah langsung di tempat. Mampu menghadapi masalah, konflik dan kritik. Tidak khawatir, menikmati apapun yang terjadi.Cenderung untuk menyukai sesuatu yang mekanistis, kegiatan bersama dan olahraga.Mudah beradaptasi, toleran, pada umumnya konservatif tentang nilai-nilai. Tidak suka penjelasan terlalu panjang.Paling baik dalam hal-hal nyata yang dapat dilakukan",
+        "saran_profesi": "Marketing,Sales,Polisi,Entrepreneur,Pialang Saham,Technical Support"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b70"
+        },
+        "tipe": "ESFP",
+        "arti": "Murah Hati",
+        "karakter": "Outgoing, easygoing, mudah berteman, bersahabat, sangat sosial, ramah, hangat, & menyenangkan.Optimis, ceria, antusias, fun, menghibur, suka menjadi perhatian.Punya interpersonal skill yang baik, murah hati, mudah simpatik dan mengenali perasaan orang lain.Menghindari konflik dan menjaga keharmonisan suatu hubungan.Mengetahui apa yang terjadi di sekelilingnya dan ikut serta dalam kegiatan tersebut.Sangat baik dalam keadaan yang membutuhkan common sense, tindakan cepat dan ketrampilan praktis",
+        "saran_profesi": "Entertainer,Seniman,Marketing,Konselor,Designer,Tour Guide,Bidang Anak-anak,Bidang Hospitality"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b71"
+        },
+        "tipe": "ENFP",
+        "arti": "Optimis",
+        "karakter": "Ramah, hangat, enerjik, optimis, antusias, semangat tinggi, fun.Imaginatif, penuh ide, kreatif, inovatif.Mampu beradaptasi dengan beragam situasi dan perubahan.Pandai berkomunikasi, senang bersosialisasi & membawa suasana positif.Mudah membaca perasaan dan kebutuhan orang lain",
+        "saran_profesi": "Konselor,Psikolog,Entertainer,Pengajar,Motivator,Presenter,Reporter,MC,Seniman,Hospitality"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b72"
+        },
+        "tipe": "ENTP",
+        "arti": "Inovatif & kreatif",
+        "karakter": "Gesit, kreatif, inovatif, cerdik, logis, baik dalam banyak hal.Banyak bicara dan punya kemampuan debat yang baik. Bisa berargumentasi untuk senang-senang saja tanpa merasa bersalah.Fleksibel. Punya banyak cara untuk memecahkan masalah dan tantangan.Kurang konsisten,Cenderung untuk melakukan hal baru yang menarik hati setelah melakukan sesuatu yang lain.Punya keinginan kuat untuk mengembangkan diri",
+        "saran_profesi": "Pengacara,Psikolog,Konsultan,Ilmuan,Aktor,Marketing,Programmer,Fotografer"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b73"
+        },
+        "tipe": "ESTJ",
+        "arti": "Konservatif & Disiplin",
+        "karakter": "Praktis, realistis, berpegang pada fakta, dengan dorongan alamiah untuk bisnis dan mekanistis.Sangat sistematis, procedural dan terencana.Disiplin, on time, dan pekerja keras.Konservatif dan cenderung kaku.Tidak tertarik pada subject yang tidak berguna baginya, tapi dapat menyesuaikan diri jika diperlukan.Senang mengorganisir sesuatu.Bisa menjadi administrator yang baik jika mereka ingat untuk memperhatikan perasaan dan perspektif orang lain",
+        "saran_profesi": "Militer,Polisi,Hakim,Pengacara,Guru,Sales,Auditor,Akuntan,System Analyst"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b74"
+        },
+        "tipe": "ESFJ",
+        "arti": "Harmonis",
+        "karakter": "Hangat, banyak bicara, populer, dilahirkan untuk bekerjasama, suportif dan anggota kelompok yang aktif.Membutuhkan keseimbangan dan baik dalam menciptakan harmoni.Selalu melakukan sesuatu yang manis bagi orang lain.Kerja dengan baik dalam situasi yang mendukung dan memujinya.Santai, easy going, sederhana, tidak berfikir panjang.Teliti dan rajin merawat apa yang ia miliki",
+        "saran_profesi": "Perencana Keuangan,Perawat,Guru,Bidang Anak-anak,Konselor,Administratif,Hospitality"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b75"
+        },
+        "tipe": "ENFJ",
+        "arti": "Meyakinkan",
+        "karakter": " Kreatif, imajinatif, peka, sensitive, loyal.Pada umumnya peduli pada apa kata orang atau apa yang orang lain inginkan dan cenderung melakukan sesuatu dengan memperhatikan perasaan orang lain.Pandai bergaul, meyakinkan, ramah, fun, populer, simpatik.Responsif pada kritik dan pujian.Menyukai variasi dan tantangan baru.Butuh apresiasi dan penerimaan",
+        "saran_profesi": "Konsultan,Psikolog,Konselor,Pengajar,Marketing,HRD,Event Coordinator,Entertainer,Penulis,Motivator"
+    },
+    {
+        "_id": {
+            "$oid": "636f1cb00a6b07e3040c3b76"
+        },
+        "tipe": "ENTJ",
+        "arti": "Pemimpin Alami",
+        "karakter": "Tegas, asertif, to the point, jujur terus terang, obyektif, kritis, & punya standard tinggi.Dominan, kuat kemauannya, perfeksionis dan kompetitif.Tangguh, disiplin, dan sangat menghargai komitmen.Cenderung menutupi perasaan dan menyembunyikan kelemahan.Berkarisma, komunikasi baik, mampu menggerakkan orang.Berbakat pemimpin",
+        "saran_profesi": "Entrepreneur,Pengacara,Hakim,Konsultan,Pemimpin Organisasi,Business Analyst,Bidang Finansial"
+    }
+]

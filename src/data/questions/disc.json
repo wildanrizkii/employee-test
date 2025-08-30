@@ -1,0 +1,770 @@
+[
+    {
+  
+      "_id": "63e076fb43dab288484755e4",
+  
+      "line1": "Gampangan, Mudah setuju",
+  
+      "line2": "Percaya, Mudah percaya pada orang",
+  
+      "line3": "Petualang, Mengambil resiko",
+  
+      "line4": "Toleran, Menghormati",
+  
+      "np1": "S",
+  
+      "np2": "I",
+  
+      "np3": "*",
+  
+      "np4": "C",
+  
+      "nk1": "S",
+  
+      "nk2": "I",
+  
+      "nk3": "D",
+  
+      "nk4": "C",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755e5",
+  
+      "line1": "Lembut suara, Pendiam",
+  
+      "line2": "Optimistik, Visioner",
+  
+      "line3": "Pusat Perhatian, Suka gaul",
+  
+      "line4": "Pendamai, Membawa Harmoni",
+  
+      "np1": "C",
+  
+      "np2": "D",
+  
+      "np3": "*",
+  
+      "np4": "S",
+  
+      "nk1": "*",
+  
+      "nk2": "D",
+  
+      "nk3": "I",
+  
+      "nk4": "S",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755e6",
+  
+      "line1": "Menyemangati orang",
+  
+      "line2": "Berusaha sempurna",
+  
+      "line3": "Bagian dari kelompok",
+  
+      "line4": "Ingin membuat tujuan",
+  
+      "np1": "I",
+  
+      "np2": "*",
+  
+      "np3": "*",
+  
+      "np4": "D",
+  
+      "nk1": "I",
+  
+      "nk2": "C",
+  
+      "nk3": "S",
+  
+      "nk4": "*",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755e7",
+  
+      "line1": "Menjadi frustrasi",
+  
+      "line2": "Menyimpan perasaan saya",
+  
+      "line3": "Menceritakan sisi saya",
+  
+      "line4": "Siap beroposisi",
+  
+      "np1": "C",
+  
+      "np2": "S",
+  
+      "np3": "*",
+  
+      "np4": "D",
+  
+      "nk1": "C",
+  
+      "nk2": "S",
+  
+      "nk3": "I",
+  
+      "nk4": "D",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755e8",
+  
+      "line1": "Hidup, Suka bicara",
+  
+      "line2": "Gerak cepat, Tekun",
+  
+      "line3": "Usaha menjaga keseimbangan",
+  
+      "line4": "Usaha mengikuti aturan",
+  
+      "np1": "I",
+  
+      "np2": "D",
+  
+      "np3": "S",
+  
+      "np4": "*",
+  
+      "nk1": "*",
+  
+      "nk2": "D",
+  
+      "nk3": "S",
+  
+      "nk4": "C",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755e9",
+  
+      "line1": "Kelola waktu secara efisien",
+  
+      "line2": "Sering terburu-buru, Merasa tertekan",
+  
+      "line3": "Masalah sosial itu penting",
+  
+      "line4": "Suka selesaikan apa yang saya mulai",
+  
+      "np1": "C",
+  
+      "np2": "D",
+  
+      "np3": "I",
+  
+      "np4": "S",
+  
+      "nk1": "*",
+  
+      "nk2": "D",
+  
+      "nk3": "I",
+  
+      "nk4": "S",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755ea",
+  
+      "line1": "Tolak perubahan mendadak",
+  
+      "line2": "Cenderung janji berlebihan",
+  
+      "line3": "Tarik diri di tengah tekanan",
+  
+      "line4": "Tidak takut bertempur",
+  
+      "np1": "S",
+  
+      "np2": "I",
+  
+      "np3": "*",
+  
+      "np4": "*",
+  
+      "nk1": "*",
+  
+      "nk2": "I",
+  
+      "nk3": "C",
+  
+      "nk4": "D",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755eb",
+  
+      "line1": "Penyemangat yang baik",
+  
+      "line2": "Pendengar yang baik",
+  
+      "line3": "Penganalisa yang baik",
+  
+      "line4": "Delegator yang baik",
+  
+      "np1": "I",
+  
+      "np2": "S",
+  
+      "np3": "C",
+  
+      "np4": "D",
+  
+      "nk1": "I",
+  
+      "nk2": "S",
+  
+      "nk3": "C",
+  
+      "nk4": "D",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755ec",
+  
+      "line1": "Hasil adalah penting",
+  
+      "line2": "Lakukan dengan benar, Akurasi penting",
+  
+      "line3": "Dibuat menyenangkan",
+  
+      "line4": "Mari kerjakan bersama",
+  
+      "np1": "D",
+  
+      "np2": "C",
+  
+      "np3": "*",
+  
+      "np4": "*",
+  
+      "nk1": "D",
+  
+      "nk2": "C",
+  
+      "nk3": "I",
+  
+      "nk4": "S",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755ed",
+  
+      "line1": "Akan berjalan terus tanpa kontrol diri",
+  
+      "line2": "Akan membeli sesuai dorongan hati",
+  
+      "line3": "Akan menunggu, Tanpa tekanan",
+  
+      "line4": "Akan mengusahakan yang kuinginkan",
+  
+      "np1": "*",
+  
+      "np2": "D",
+  
+      "np3": "S",
+  
+      "np4": "I",
+  
+      "nk1": "C",
+  
+      "nk2": "D",
+  
+      "nk3": "S",
+  
+      "nk4": "*",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755ee",
+  
+      "line1": "Ramah, Mudah bergabung",
+  
+      "line2": "Unik, Bosan rutinitas",
+  
+      "line3": "Aktif mengubah sesuatu",
+  
+      "line4": "Ingin hal-hal yang pasti",
+  
+      "np1": "S",
+  
+      "np2": "*",
+  
+      "np3": "D",
+  
+      "np4": "C",
+  
+      "nk1": "*",
+  
+      "nk2": "I",
+  
+      "nk3": "D",
+  
+      "nk4": "C",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755ef",
+  
+      "line1": "Non-konfrontasi, Menyerah",
+  
+      "line2": "Dipenuhi hal detail",
+  
+      "line3": "Perubahan pada menit terakhir",
+  
+      "line4": "Menuntut, Kasar",
+  
+      "np1": "*",
+  
+      "np2": "C",
+  
+      "np3": "I",
+  
+      "np4": "D",
+  
+      "nk1": "S",
+  
+      "nk2": "*",
+  
+      "nk3": "I",
+  
+      "nk4": "D",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755f0",
+  
+      "line1": "Ingin kemajuan",
+  
+      "line2": "Puas dengan segalanya",
+  
+      "line3": "Terbuka memperlihatkan perasaan",
+  
+      "line4": "Rendah hati, Sederhana",
+  
+      "np1": "D",
+  
+      "np2": "S",
+  
+      "np3": "I",
+  
+      "np4": "*",
+  
+      "nk1": "D",
+  
+      "nk2": "*",
+  
+      "nk3": "*",
+  
+      "nk4": "C",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755f1",
+  
+      "line1": "Tenang, Pendiam",
+  
+      "line2": "Bahagia, Tanpa beban",
+  
+      "line3": "Menyenangkan, Baik hati",
+  
+      "line4": "Tak gentar, Berani",
+  
+      "np1": "C",
+  
+      "np2": "I",
+  
+      "np3": "S",
+  
+      "np4": "D",
+  
+      "nk1": "C",
+  
+      "nk2": "I",
+  
+      "nk3": "*",
+  
+      "nk4": "D",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755f2",
+  
+      "line1": "Menggunakan waktu berkualitas dgn teman",
+  
+      "line2": "Rencanakan masa depan, Bersiap",
+  
+      "line3": "Bepergian demi petualangan baru",
+  
+      "line4": "Menerima ganjaran atas tujuan yg dicapai",
+  
+      "np1": "S",
+  
+      "np2": "C",
+  
+      "np3": "I",
+  
+      "np4": "D",
+  
+      "nk1": "S",
+  
+      "nk2": "*",
+  
+      "nk3": "I",
+  
+      "nk4": "D",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755f3",
+  
+      "line1": "Aturan perlu dipertanyakan",
+  
+      "line2": "Aturan membuat adil",
+  
+      "line3": "Aturan membuat bosan",
+  
+      "line4": "Aturan membuat aman",
+  
+      "np1": "*",
+  
+      "np2": "C",
+  
+      "np3": "I",
+  
+      "np4": "S",
+  
+      "nk1": "D",
+  
+      "nk2": "*",
+  
+      "nk3": "I",
+  
+      "nk4": "S",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755f4",
+  
+      "line1": "Pendidikan, Kebudayaan",
+  
+      "line2": "Prestasi, Ganjaran",
+  
+      "line3": "Keselamatan, keamanan",
+  
+      "line4": "Sosial, Perkumpulan kelompok",
+  
+      "np1": "*",
+  
+      "np2": "D",
+  
+      "np3": "S",
+  
+      "np4": "I",
+  
+      "nk1": "C",
+  
+      "nk2": "D",
+  
+      "nk3": "S",
+  
+      "nk4": "*",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755f5",
+  
+      "line1": "Memimpin, Pendekatan langsung",
+  
+      "line2": "Suka bergaul, Antusias",
+  
+      "line3": "Dapat diramal, Konsisten",
+  
+      "line4": "Waspada, Hati-hati",
+  
+      "np1": "D",
+  
+      "np2": "*",
+  
+      "np3": "*",
+  
+      "np4": "C",
+  
+      "nk1": "D",
+  
+      "nk2": "I",
+  
+      "nk3": "S",
+  
+      "nk4": "*",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755f6",
+  
+      "line1": "Tidak mudah dikalahkan",
+  
+      "line2": "Kerjakan sesuai perintah, Ikut pimpinan",
+  
+      "line3": "Mudah terangsang, Riang",
+  
+      "line4": "Ingin segalanya teratur, Rapi",
+  
+      "np1": "D",
+  
+      "np2": "S",
+  
+      "np3": "I",
+  
+      "np4": "*",
+  
+      "nk1": "D",
+  
+      "nk2": "*",
+  
+      "nk3": "I",
+  
+      "nk4": "C",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755f7",
+  
+      "line1": "Saya akan pimpin mereka",
+  
+      "line2": "Saya akan melaksanakan",
+  
+      "line3": "Saya akan meyakinkan mereka",
+  
+      "line4": "Saya dapatkan fakta",
+  
+      "np1": "D",
+  
+      "np2": "S",
+  
+      "np3": "I",
+  
+      "np4": "C",
+  
+      "nk1": "*",
+  
+      "nk2": "S",
+  
+      "nk3": "I",
+  
+      "nk4": "*",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755f8",
+  
+      "line1": "Memikirkan orang dahulu",
+  
+      "line2": "Kompetitif, Suka tantangan",
+  
+      "line3": "Optimis, Positif",
+  
+      "line4": "Pemikir logis, Sistematik",
+  
+      "np1": "S",
+  
+      "np2": "D",
+  
+      "np3": "I",
+  
+      "np4": "*",
+  
+      "nk1": "S",
+  
+      "nk2": "D",
+  
+      "nk3": "I",
+  
+      "nk4": "C",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755f9",
+  
+      "line1": "Menyenangkan orang, Mudah setuju",
+  
+      "line2": "Tertawa lepas, Hidup",
+  
+      "line3": "Berani, Tak gentar",
+  
+      "line4": "Tenang, Pendiam",
+  
+      "np1": "S",
+  
+      "np2": "*",
+  
+      "np3": "D",
+  
+      "np4": "C",
+  
+      "nk1": "S",
+  
+      "nk2": "I",
+  
+      "nk3": "D",
+  
+      "nk4": "C",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755fa",
+  
+      "line1": "Ingin otoritas lebih",
+  
+      "line2": "Ingin kesempatan baru",
+  
+      "line3": "Menghindari konflik",
+  
+      "line4": "Ingin petunjuk yang jelas",
+  
+      "np1": "*",
+  
+      "np2": "I",
+  
+      "np3": "S",
+  
+      "np4": "*",
+  
+      "nk1": "D",
+  
+      "nk2": "*",
+  
+      "nk3": "S",
+  
+      "nk4": "C",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    },
+    {
+  
+      "_id": "63e076fb43dab288484755fb",
+  
+      "line1": "Dapat diandalkan, Dapat dipercaya",
+  
+      "line2": "Kreatif, Unik",
+  
+      "line3": "Garis dasar, Orientasi hasil",
+  
+      "line4": "Jalankan standar yang tinggi, Akurat",
+  
+      "np1": "*",
+  
+      "np2": "I",
+  
+      "np3": "D",
+  
+      "np4": "C",
+  
+      "nk1": "S",
+  
+      "nk2": "I",
+  
+      "nk3": "*",
+  
+      "nk4": "*",
+  
+      "createdAt": "2024-07-31T02: 47: 47.320Z",
+  
+      "updatedAt": "2024-07-31T02: 47: 47.320Z"
+    }
+]

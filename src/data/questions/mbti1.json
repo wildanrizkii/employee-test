@@ -1,0 +1,1166 @@
+[{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1339"
+  },
+  "soal": "Saya merasa lebih senang disebut sebagai orang yang",
+  "jawabanA": "berperasaan halus.",
+  "jawabanB": "memakai akal sehat.",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1337"
+  },
+  "soal": "Dalam suatu pertemuan, saya lebih sering",
+  "jawabanA": "memperkenalkan orang lain.",
+  "jawabanB": "diperkenalkan orang lain.",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e133e"
+  },
+  "soal": "Saya mempunyai kelebihan dalam",
+  "jawabanA": "menghadapi persoalan yang datang mendadak dan cepat mengambil keputusan untuk mengatasinya.",
+  "jawabanB": "melaksanakan kegiatan yang sesuai dengan rencana yang sudah dibuat.",
+  "tipe": "4",
+  "valueA": "P",
+  "valueB": "J",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e133f"
+  },
+  "soal": "Saya lebih senang bersahabat dengan",
+  "jawabanA": "beberapa orang dari kalangan tertentu saja.",
+  "jawabanB": "banyak orang dari berbagai macam kalangan.",
+  "tipe": "1",
+  "valueA": "I",
+  "valueB": "E",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1342"
+  },
+  "soal": "Saya merasa lebih sering bersemangat jika bekerja",
+  "jawabanA": "terencana, tahap demi tahap, sesuai dengan jadwal.",
+  "jawabanB": "menjelang saat-saat terakhir, waktu penyerahan tugas.",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1343"
+  },
+  "soal": "Bila pergi ke pesta biasanya saya merasa",
+  "jawabanA": "segan dan ingin pulang secepat mungkin.",
+  "jawabanB": "bergairah dan ingin tinggal sampai larut malam.",
+  "tipe": "1",
+  "valueA": "I",
+  "valueB": "E",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1348"
+  },
+  "soal": "Saya lebih suka berbicara tentang",
+  "jawabanA": "kemungkinan-kemungkinan baru yang dapat ditemukan.",
+  "jawabanB": "kenyataan yang ada.",
+  "tipe": "2",
+  "valueA": "N",
+  "valueB": "S",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1349"
+  },
+  "soal": "Dalam urusan jual-beli yang terpenting adalah",
+  "jawabanA": "memperhitungkan untung rugi",
+  "jawabanB": "memelihara hubungan baik",
+  "tipe": "3",
+  "valueA": "T",
+  "valueB": "F",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e134b"
+  },
+  "soal": "Orang-orang mengetahui tentang hal-hal yang saya sukai",
+  "jawabanA": "pada pertemuan pertama.",
+  "jawabanB": "setelah cukup lama mengenal saya.",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e134f"
+  },
+  "soal": "Dalam situasi yang membuat saya malu, biasanya saya",
+  "jawabanA": "mengalihkan pokok pembicaraan.",
+  "jawabanB": "berdiam diri dan memikirkan mengapa hal itu dapat terjadi.",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1364"
+  },
+  "soal": "Bagi saya kenyataan merupakan",
+  "jawabanA": "sesuatu yang pasti, tidak mungkin diubah",
+  "jawabanB": "salah satu bentuk prinsip",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1367"
+  },
+  "soal": "Bila saya berlibur, saya lebih memilih tempat",
+  "jawabanA": "yang ramai dikunjungi orang",
+  "jawabanB": "yang sepi, tidak banyak dikunjungi orang",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e133b"
+  },
+  "soal": "Berkenalan dengan orang-orang baru yang belum saya kenal biasanya membuat Saya",
+  "jawabanA": "merasa bersemangat dan bergembira.",
+  "jawabanB": "segan dan terbebani.",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e133d"
+  },
+  "soal": "Saya merasakan sebagai suatu kelemahan jika orang",
+  "jawabanA": "terlalu memperhitungkan untung rugi.",
+  "jawabanB": "terlalu mengikuti perasaan.",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1346"
+  },
+  "soal": "Saya merasa lebih sulit meyesuaikan diri dengan pekerjaan yang",
+  "jawabanA": "selalu berubah-ubah.",
+  "jawabanB": "rutin.",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1351"
+  },
+  "soal": "Saya lebih mengagumi orang yang",
+  "jawabanA": "mempertahankan keharmonisan kelompok, kalau perlu mengorbankan kebenaran.",
+  "jawabanB": "mempertahankan kebenaran kalau perlu mengorbankan keharmonisan kelompok.",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1352"
+  },
+  "soal": "Bila saya ditanya mengenai kegiatan saya pada hari Minggu biasanya",
+  "jawabanA": "saya dapat menyebutkan dengan pasti.",
+  "jawabanB": "saya tidak dapat menyebutkannya dengan pasti.",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1354"
+  },
+  "soal": "Saya lebih tertarik untuk bekerja di bidang",
+  "jawabanA": "penelitian dan perencanaan.",
+  "jawabanB": "produksi dan distribusi.",
+  "tipe": "2",
+  "valueA": "N",
+  "valueB": "S",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1358"
+  },
+  "soal": "Saya lebih suka mengambil keputusan berdasarkan",
+  "jawabanA": "analisis-logis",
+  "jawabanB": "firasat-intuisi",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1359"
+  },
+  "soal": "Merupakan hal yang sulit bagi saya untuk",
+  "jawabanA": "mengasihani orang lain",
+  "jawabanB": "memanfaatkan orang lain",
+  "tipe": "3",
+  "valueA": "T",
+  "valueB": "F",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e135c"
+  },
+  "soal": "Dalam mengerjakan suatu tugas, saya lebih sering",
+  "jawabanA": "mengikuti petunjuk yang pasti",
+  "jawabanB": "mencoba-coba berdasarkan pemikiran yang muncul pada waktu menjalankannya",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1362"
+  },
+  "soal": "Dalam bergaul dengan orang-orang yang ada disekeliling saya",
+  "jawabanA": "bersahabat dengan siapa saja yang mau bergaul dengan saya",
+  "jawabanB": "mempunyai syarat-syarat tertentu untuk orang-orang yang saya anggap cocok sebagai sahabat saya",
+  "tipe": "4",
+  "valueA": "P",
+  "valueB": "J",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1363"
+  },
+  "soal": "Bekerja seorang diri biasanya membuat saya merasa",
+  "jawabanA": "bersemangat",
+  "jawabanB": "tertekan",
+  "tipe": "1",
+  "valueA": "I",
+  "valueB": "P",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1365"
+  },
+  "soal": "Biasanya saya memandang",
+  "jawabanA": "kelembutan hati lebih penting daripada logika",
+  "jawabanB": "logika lebih penting daripada kelembutan hati",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1368"
+  },
+  "soal": "Kemampuan untuk meramalkan masa depan menurut pendapat saya merupakan",
+  "jawabanA": "kemampuan istimewa yang menguntungkan",
+  "jawabanB": "hal yang mustahil, sia-sia",
+  "tipe": "2",
+  "valueA": "N",
+  "valueB": "S",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1369"
+  },
+  "soal": "Dalam mengambil keputusan untuk menolong orang saya lebih menekankan pada",
+  "jawabanA": "pertimbangan perlu atau tidaknya saya membantu orang tersebut",
+  "jawabanB": "pertimbangan kalau seandainya saya berada dalam keadaan seperti orang tersebut",
+  "tipe": "3",
+  "valueA": "T",
+  "valueB": "F",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e136b"
+  },
+  "soal": "Dalam bergaul saya biasanya",
+  "jawabanA": "menyapa orang lain",
+  "jawabanB": "menunggu disapa orang lain",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e136c"
+  },
+  "soal": "Saya merasa lebih terganggu bila dianggap",
+  "jawabanA": "orang yang hanya mencari-cari kemungkinan baru",
+  "jawabanB": "orang yang hanya dapat bekerja rutin",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1336"
+  },
+  "soal": "Bila saya akan bepergian untuk beberapa hari, saya lebih senang",
+  "jawabanA": "terlebih dahulu merencanakan kegiatan dan waktu.",
+  "jawabanB": "pergi begitu saja.",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1333"
+  },
+  "soal": "Di suatu pesta, biasanya saya",
+  "jawabanA": "berbicara dengan orang banyak, termasuk orang yang tidak saya kenal.",
+  "jawabanB": "berbicara hanya dengan beberapa orang yang saya kenal.",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1338"
+  },
+  "soal": "Saya lebih mengagumi orang-orang yang",
+  "jawabanA": "mencoba sesuatu yang baru dan yang berusaha untuk menjadi orang yang istimewa dibandingkan dengan orang-orang pada umumnya.",
+  "jawabanB": "berpegang teguh pada kebiasaan tradisi, tidak pernah bertingkah laku yang berbeda dari orang-orang pada umumnya.",
+  "tipe": "2",
+  "valueA": "N",
+  "valueB": "S",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e133a"
+  },
+  "soal": "Bagi Saya mematuhi suatu aturan membuat Saya merasa",
+  "jawabanA": "senang.",
+  "jawabanB": "terkekang.",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1340"
+  },
+  "soal": "Saya lebih senang dianggap sebagai orang yang",
+  "jawabanA": "kreatif, banyak ide.",
+  "jawabanB": "produktif, banyak hasil kerja.",
+  "tipe": "2",
+  "valueA": "N",
+  "valueB": "S",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1347"
+  },
+  "soal": "Di antara teman-teman, saya termasuk orang yang",
+  "jawabanA": "pertama mengetahui hal-hal yang sedang terjadi disekeliling saya.",
+  "jawabanB": "paling akhir mengetahui hal-hal yang sedang terjadi disekeliling saya.",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e134c"
+  },
+  "soal": "Saya lebih suka",
+  "jawabanA": "mencoba-coba daripada menerima kenyataan.",
+  "jawabanB": "menerima kenyataan daripada mencoba-coba.",
+  "tipe": "2",
+  "valueA": "N",
+  "valueB": "S",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e134e"
+  },
+  "soal": "Dalam kegiatan sehari-hari biasanya saya",
+  "jawabanA": "membuat rancangan khusus untuk kegiatan selama satu minggu.",
+  "jawabanB": "langsung menjalaninya tanpa membuat rencana sebelumnya.",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1350"
+  },
+  "soal": "Menurut pendapat saya murid-murid sekolah dewasa ini kurang mendapat kesempatan untuk",
+  "jawabanA": "mengembangkan kemampuan membayangkan.",
+  "jawabanB": "mempelajari hal-hal praktis.",
+  "tipe": "2",
+  "valueA": "N",
+  "valueB": "S",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1356"
+  },
+  "soal": "Dalam melaksanakan suatu rencana kerja",
+  "jawabanA": "saya tetap berpegang pada rencana yang ada dalam keadaan apapun juga",
+  "jawabanB": "saya seringkali membuat perubahan untuk menyesuaikan dengan kenyataan yang ada",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e135d"
+  },
+  "soal": "Saya menganggap sebagai suatu kesalahan jika saya bertingkah laku",
+  "jawabanA": "tidak logis",
+  "jawabanB": "tidak simpatik",
+  "tipe": "3",
+  "valueA": "T",
+  "valueB": "F",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e135e"
+  },
+  "soal": "Dalam mengerjakan pekerjaan rutin saya merasa",
+  "jawabanA": "tertekan",
+  "jawabanB": "senang",
+  "tipe": "4",
+  "valueA": "P",
+  "valueB": "J",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1361"
+  },
+  "soal": "Saya lebih senang bila",
+  "jawabanA": "pikiran mengendalikan perasaan saya",
+  "jawabanB": "perasaan mengendalikan pikiran saya",
+  "tipe": "3",
+  "valueA": "T",
+  "valueB": "F",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e136a"
+  },
+  "soal": "Dalam menghadapi situasi yang tidak pasti, saya merasa",
+  "jawabanA": "cemas",
+  "jawabanB": "tertantang",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1334"
+  },
+  "soal": "Saya lebih suka menjelaskan tentang",
+  "jawabanA": "suatu kenyataan yang dapat diamati.",
+  "jawabanB": "prinsip-prinsip yang bersifat teoritis.",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1335"
+  },
+  "soal": "Saya lebih senang bekerja dengan atasan yang",
+  "jawabanA": "baik hati.",
+  "jawabanB": "adil.",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e133c"
+  },
+  "soal": "Saya lebih suka berteman dengan orang yang",
+  "jawabanA": "bertindak berdasarkan kenyataan yang ada.",
+  "jawabanB": "suka mencoba pemikiran baru.",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1341"
+  },
+  "soal": "Menurut pendapat saya yang terpenting dalam pergaulan adalah",
+  "jawabanA": "menjaga perasaan orang lain.",
+  "jawabanB": "menghargai hak orang lain.",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1344"
+  },
+  "soal": "Saya lebih senang",
+  "jawabanA": "memberi kesempatan kepada pelaksana untuk mencoba cara baru yang menurut pendapatnya lebih baik.",
+  "jawabanB": "memberitahukan pelaksanaan kegiatan secara rinci.",
+  "tipe": "2",
+  "valueA": "N",
+  "valueB": "S",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1345"
+  },
+  "soal": "Saya lebih tertarik pada pengalaman yang",
+  "jawabanA": "mengharukan.",
+  "jawabanB": "membuktikan kebenaran",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e134a"
+  },
+  "soal": "Dalam mengerjakan suatu pekerjaan saya biasanya",
+  "jawabanA": "meningkatkan kecepatan kerja dan waktu kerja saat-saat terakhir penyelesaian kerja tersebut.",
+  "jawabanB": "mulai seawal mungkin sehingga mempunyai waktu yang cukup untuk menyelesaikan pekerjaan tersebut.",
+  "tipe": "4",
+  "valueA": "P",
+  "valueB": "J",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e134d"
+  },
+  "soal": "Dalam bergaul dengan rekan kerja saya lebih menyenangi",
+  "jawabanA": "hubungan kekeluargaan yang akrab.",
+  "jawabanB": "hubungan yang sesuai dengan peraturan kerja.",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1353"
+  },
+  "soal": "Dalam suatu kegiatan kelompok saya senang untuk",
+  "jawabanA": "turut serta untuk menciptakan suasana akrab kebersamaan.",
+  "jawabanB": "membiarkan setiap orang memperoleh kesenangan dengan caranya masing-masing.",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1355"
+  },
+  "soal": "Merupakan hal yang tidak menyenangkan, bila saya harus mengambil keputusan untuk",
+  "jawabanA": "membela karena belas kasihan",
+  "jawabanB": "menghukum karena keadilan",
+  "tipe": "3",
+  "valueA": "T",
+  "valueB": "F",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1357"
+  },
+  "soal": "Orang-orang yang bergaul dengan saya pada umumnya mengetahui",
+  "jawabanA": "pendapat saya mengenai hal-hal tertentu, hanya yang saya anggap merasa perlu tahu",
+  "jawabanB": "pendapat saya mengenai berbagai hal yang saya alami",
+  "tipe": "1",
+  "valueA": "I",
+  "valueB": "E",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e135a"
+  },
+  "soal": "Dalam menghadapi suatu persoalan saya merasa tenang",
+  "jawabanA": "sesudah saya membuat keputusan",
+  "jawabanB": "sebelum saya membuat keputusan",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e135b"
+  },
+  "soal": "Dalam pertemuan dengan orang banyak, pada umumnya saya",
+  "jawabanA": "turut berbicara dalam kelompok",
+  "jawabanB": "berbicara dengan satu orang tertentu, setiap kali saya berbicara",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e135f"
+  },
+  "soal": "Saya lebih senang",
+  "jawabanA": "mengungkapkan perasaan saya dengan bebas",
+  "jawabanB": "menyimpan perasaan saya untuk diri saya sendiri",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1360"
+  },
+  "soal": "Dalam mengatur ruang kerja saya, saya lebih senang",
+  "jawabanA": "membiarkan susunan yang sudah ditentukan",
+  "jawabanB": "merubah-rubah susunannya",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e1366"
+  },
+  "soal": "Saya merasa lebih senang membuat suatu pernyataan yang",
+  "jawabanA": "bersifat pasti dan tak dapat diubah lagi",
+  "jawabanB": "bersifat sementara dan dapat diubah",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e136d"
+  },
+  "soal": "Dalam membuat keputusan saya lebih mempertimbangkan",
+  "jawabanA": "apa yang perlu saya lakukan",
+  "jawabanB": "siapa yang saya hadapi",
+  "tipe": "3",
+  "valueA": "T",
+  "valueB": "F",
+  "bagian": "bagian1"
+},
+{
+  "_id": {
+    "$oid": "6386bf515662f0f7e99e136e"
+  },
+  "soal": "Saya lebih mengagumi orang yang",
+  "jawabanA": "bekerja secara sistematis dan dapat mengatur kegiatan dengan terencana",
+  "jawabanB": "mampu menyesuaikan dan melaksanakan pekerjaan dalam keadaan apapun juga",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian1"
+},{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1376"
+  },
+  "jawabanA": "membuat rencana",
+  "jawabanB": "bekerja",
+  "tipe": "2",
+  "valueA": "N",
+  "valueB": "S",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1379"
+  },
+  "jawabanA": "dikenal secara mendalam",
+  "jawabanB": "dikenal banyak orang",
+  "tipe": "1",
+  "valueA": "I",
+  "valueB": "E",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1378"
+  },
+  "jawabanA": "terjadwal",
+  "jawabanB": "tergantung keadaan",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e137c"
+  },
+  "jawabanA": "kaku",
+  "jawabanB": "seenaknya",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1380"
+  },
+  "jawabanA": "semoga terjadi menurut rencana",
+  "jawabanB": "semoga terjadi menurut takdir",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1383"
+  },
+  "jawabanA": "menyadari anugrah",
+  "jawabanB": "mencari keuntungan",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1385"
+  },
+  "jawabanA": "bergaul",
+  "jawabanB": "menyendiri",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1386"
+  },
+  "jawabanA": "kenyataan",
+  "jawabanB": "cita-cita",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e138e"
+  },
+  "jawabanA": "membuat uraian",
+  "jawabanB": "membuat rangkuman",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e138f"
+  },
+  "jawabanA": "pendamai",
+  "jawabanB": "hakim",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1396"
+  },
+  "jawabanA": "membuat analisis",
+  "jawabanB": "membuat dugaan",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1397"
+  },
+  "jawabanA": "keadilan",
+  "jawabanB": "belas kasihan",
+  "tipe": "3",
+  "valueA": "T",
+  "valueB": "F",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e137e"
+  },
+  "jawabanA": "bukti",
+  "jawabanB": "firasat",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1381"
+  },
+  "jawabanA": "tampil di muka umum",
+  "jawabanB": "bekerja di belakang layar",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e138c"
+  },
+  "jawabanA": "memegang teguh aturan",
+  "jawabanB": "memberi kesempatan untuk mencoba",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1391"
+  },
+  "jawabanA": "tenang",
+  "jawabanB": "lincah",
+  "tipe": "1",
+  "valueA": "I",
+  "valueB": "E",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1395"
+  },
+  "jawabanA": "bersikap ramah",
+  "jawabanB": "mengambil jarak",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1398"
+  },
+  "jawabanA": "kepastian",
+  "jawabanB": "kejutan",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e137f"
+  },
+  "jawabanA": "menimbulkan rasa haru",
+  "jawabanB": "mencari bukti-bukti meyakinkan",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1375"
+  },
+  "jawabanA": "popular",
+  "jawabanB": "setia",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1388"
+  },
+  "jawabanA": "pasrah",
+  "jawabanB": "menentukan",
+  "tipe": "4",
+  "valueA": "P",
+  "valueB": "J",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e138a"
+  },
+  "jawabanA": "bagian-bagian",
+  "jawabanB": "keseluruhan",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e138b"
+  },
+  "jawabanA": "mengusahakan keselarasan",
+  "jawabanB": "mempertahankan kebenaran",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1390"
+  },
+  "jawabanA": "santai",
+  "jawabanB": "tepat waktu",
+  "tipe": "4",
+  "valueA": "P",
+  "valueB": "J",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1393"
+  },
+  "jawabanA": "waspada",
+  "jawabanB": "percaya",
+  "tipe": "3",
+  "valueA": "T",
+  "valueB": "F",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1377"
+  },
+  "jawabanA": "memuji",
+  "jawabanB": "membimbing",
+  "tipe": "3",
+  "valueA": "T",
+  "valueB": "F",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e137a"
+  },
+  "jawabanA": "memproduksi",
+  "jawabanB": "merancang",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e137b"
+  },
+  "jawabanA": "memberi simpati",
+  "jawabanB": "membuat penilaian",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e137d"
+  },
+  "jawabanA": "hening",
+  "jawabanB": "meriah",
+  "tipe": "1",
+  "valueA": "I",
+  "valueB": "E",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1382"
+  },
+  "jawabanA": "mengulangi yang sudah biasa",
+  "jawabanB": "menemukan sesuatu yang baru",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1384"
+  },
+  "jawabanA": "mutlak",
+  "jawabanB": "relatif",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1387"
+  },
+  "jawabanA": "kekeluargaan",
+  "jawabanB": "ketegasan",
+  "tipe": "3",
+  "valueA": "F",
+  "valueB": "T",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1389"
+  },
+  "jawabanA": "berbicara",
+  "jawabanB": "menulis",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e138d"
+  },
+  "jawabanA": "pergi ke pesta",
+  "jawabanB": "membaca buku",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1392"
+  },
+  "jawabanA": "membuat",
+  "jawabanB": "mencipta",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian2"
+},
+{
+  "_id": {
+    "$oid": "6386bfcb5662f0f7e99e1394"
+  },
+  "jawabanA": "luwes",
+  "jawabanB": "tertentu",
+  "tipe": "4",
+  "valueA": "P",
+  "valueB": "J",
+  "bagian": "bagian2"
+},{
+  "_id": {
+    "$oid": "6386c0075662f0f7e99e139c"
+  },
+  "soalA": "Extravert (E)",
+  "soalB": "Introvert (I)",
+  "jawabanA": "Cenderung memperoleh kekuatan dari luar dirinya (berinteraksi dengan orang lain, beraktifitas dan kepuasan dari benda).",
+  "jawabanB": "Cenderung memperoleh kekuatan dari dalam diri (perenungan, berpikir dan berpandangan introspeksi merasakan dan mengolah emosi).",
+  "tipe": "1",
+  "valueA": "E",
+  "valueB": "I",
+  "bagian": "bagian3"
+},
+{
+  "_id": {
+    "$oid": "6386c0075662f0f7e99e139d"
+  },
+  "soalA": "Sensing (S)",
+  "soalB": "Intuition (N)",
+  "jawabanA": "Cenderung mengandalkan informasi berdasarkan pancaindera, bersifat aktual.",
+  "jawabanB": "Cenderung mengandalkan informasi berdasarkan intuisi (indera ke 6) mementingkan apa yang dirasa dan melihat kemungkinan-kemungkinan yang akan muncul atau akan terjadi.",
+  "tipe": "2",
+  "valueA": "S",
+  "valueB": "N",
+  "bagian": "bagian3"
+},
+{
+  "_id": {
+    "$oid": "6386c0075662f0f7e99e139e"
+  },
+  "soalA": "Thinking (T)",
+  "soalB": "Feeling (F)",
+  "jawabanA": "Cenderung mengorganisir dan menstrukturkan informasi yang diperoleh sehingga dapat menyusun keputusan yang logis, faktual dan objektif.",
+  "jawabanB": "Cenderung mengorganisir dan menstrukturkan informasi yang diperoleh dan menghasilkan keputusan berdasarkan nilai pribadi dan kemanusiaan.",
+  "tipe": "3",
+  "valueA": "T",
+  "valueB": "F",
+  "bagian": "bagian3"
+},
+{
+  "_id": {
+    "$oid": "6386c0075662f0f7e99e139f"
+  },
+  "soalA": "Judging (J)",
+  "soalB": "Perceiving (P)",
+  "jawabanA": "Cenderung memiliki kehidupan yang teratur dan berstruktur.",
+  "jawabanB": "Cenderung memiliki kehidupan yang fleksibel dan spontan.",
+  "tipe": "4",
+  "valueA": "J",
+  "valueB": "P",
+  "bagian": "bagian3"
+}]
