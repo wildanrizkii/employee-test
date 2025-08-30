@@ -50,7 +50,7 @@ export async function middleware(request: NextRequest) {
 
     // Fetch participant data - sekarang API sudah support cookie
     const res = await fetch(
-      `${request.nextUrl.origin}/api/participants/${decoded.participantId}`,
+      `https://employee-test-one.vercel.app/api/participants/${decoded.participantId}`,
       {
         headers: {
           Cookie: request.headers.get("cookie") ?? "",
