@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
       };
 
       traits.sort((a, b) => {
-        return traitOrder[a] - traitOrder[b];
+        return traitOrder[a]! - traitOrder[b]!;
       });
 
       const data = traits.join(", ");

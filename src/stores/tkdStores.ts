@@ -75,7 +75,7 @@ interface TKDState {
 // Helper function to convert answer index to letter
 const getAnswerLabel = (index: number): string => {
   const labels = ["A", "B", "C", "D", "E"];
-  return labels[index] || "";
+  return labels[index] ?? "";
 };
 
 // Helper function to convert letter to index
@@ -238,13 +238,15 @@ export const useTKDStore = create<TKDState>()(
         if (!question) return null;
 
         const answerIndex = getLabelIndex(answerLabel);
-        return answerIndex !== -1 ? question.jawaban[answerIndex] : null;
+        return answerIndex !== -1
+          ? (question.jawaban[answerIndex] ?? null)
+          : null;
       },
 
       // New method: Get the stored answer label
       getAnswerLabel: (questionId) => {
         const state = get();
-        return state.answers[questionId] || null;
+        return state.answers[questionId] ?? null;
       },
 
       // Navigation helpers

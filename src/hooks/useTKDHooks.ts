@@ -220,9 +220,11 @@ const getJenisBreakdown = (answers: Answers, questions: Question[]) => {
     const questionId = question.id.toString();
     const isAnswered = !!(answers[questionId] && answers[questionId] !== "");
 
-    if (!breakdown[jenis]) {
-      breakdown[jenis] = { answered: 0, total: 0, percentage: 0 };
-    }
+    // if (!breakdown[jenis]) {
+    //   breakdown[jenis] = { answered: 0, total: 0, percentage: 0 };
+    // }
+
+    breakdown[jenis] ??= { answered: 0, total: 0, percentage: 0 };
 
     breakdown[jenis].total++;
     if (isAnswered) {
@@ -232,9 +234,11 @@ const getJenisBreakdown = (answers: Answers, questions: Question[]) => {
 
   // Calculate percentages
   Object.keys(breakdown).forEach((jenis) => {
-    breakdown[jenis].percentage =
-      breakdown[jenis].total > 0
-        ? Math.round((breakdown[jenis].answered / breakdown[jenis].total) * 100)
+    breakdown[jenis]!.percentage =
+      breakdown[jenis]!.total > 0
+        ? Math.round(
+            (breakdown[jenis]!.answered / breakdown[jenis]!.total) * 100,
+          )
         : 0;
   });
 

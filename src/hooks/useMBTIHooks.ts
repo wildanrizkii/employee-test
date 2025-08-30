@@ -205,17 +205,20 @@ const getBagianBreakdown = (answers: string[], questions: MBTIQuestion[]) => {
   > = {};
 
   questions.forEach((question, index) => {
-    const answer = answers[index] || "";
-    const bagian = question.bagian || "unknown";
-    const tipe = question.tipe || "unknown";
+    const answer = answers[index] ?? "";
+    const bagian = question.bagian ?? "unknown";
+    const tipe = question.tipe ?? "unknown";
 
-    if (!breakdown[bagian]) {
-      breakdown[bagian] = {};
-    }
+    // if (!breakdown[bagian]) {
+    //   breakdown[bagian] = {};
+    // }
 
-    if (!breakdown[bagian][tipe]) {
-      breakdown[bagian][tipe] = { A: 0, B: 0, empty: 0 };
-    }
+    // if (!breakdown[bagian][tipe]) {
+    //   breakdown[bagian][tipe] = { A: 0, B: 0, empty: 0 };
+    // }
+
+    breakdown[bagian] ??= {};
+    breakdown[bagian][tipe] ??= { A: 0, B: 0, empty: 0 };
 
     if (answer === "A") {
       breakdown[bagian][tipe].A++;

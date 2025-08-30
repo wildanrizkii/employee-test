@@ -186,7 +186,7 @@ export default function DISC(): JSX.Element {
 
     useEffect(() => {
         void loadDataFromFiles()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const updateTimeMutation = api.test.updateTime.useMutation({
@@ -238,11 +238,11 @@ export default function DISC(): JSX.Element {
         };
 
         void checkTime();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const handleAnswerSelect = (type: 'np' | 'nk', value: string): void => {
-        const currentAnswer = answers[currentQuestion] || { np: '', nk: '' }
+        const currentAnswer = answers[currentQuestion] ?? { np: '', nk: '' }
         const newAnswer = { ...currentAnswer, [type]: value }
 
         // Validation: P dan K tidak boleh sama
@@ -294,7 +294,7 @@ export default function DISC(): JSX.Element {
             activeTes: 'DISC',
             jenisTes: listTest,
         })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [submitTestMutation, checkTest?.time, answers])
 
     const handleConfirmSubmit = async () => {
@@ -303,9 +303,9 @@ export default function DISC(): JSX.Element {
         setShowConfirmDialog(false)
 
         if (unanswered.length > 0) {
-            setCurrentQuestion(unanswered[0])
+            setCurrentQuestion(unanswered[0]!)
         } else if (invalid.length > 0) {
-            setCurrentQuestion(invalid[0])
+            setCurrentQuestion(invalid[0]!)
         } else {
             // Get formatted jawaban before submitting
             // const formattedJawaban = getFormattedJawaban();
@@ -446,7 +446,7 @@ export default function DISC(): JSX.Element {
 
     // Main exam interface
     const currentQuestionData = questions[currentQuestion]
-    const currentAnswer = answers[currentQuestion] || { np: '', nk: '' }
+    const currentAnswer = answers[currentQuestion] ?? { np: '', nk: '' }
 
     if (!currentQuestionData) {
         return (

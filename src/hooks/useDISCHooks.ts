@@ -195,7 +195,7 @@ export const useKeyboardNavigation = () => {
           // Set P answer with number key
           if (event.shiftKey) {
             // Shift + number for K answer
-            const currentAnswer = answers[currentQuestion] || {
+            const currentAnswer = answers[currentQuestion] ?? {
               np: "",
               nk: "",
             };
@@ -205,7 +205,7 @@ export const useKeyboardNavigation = () => {
             }
           } else {
             // Just number for P answer
-            const currentAnswer = answers[currentQuestion] || {
+            const currentAnswer = answers[currentQuestion] ?? {
               np: "",
               nk: "",
             };

@@ -307,7 +307,7 @@ const status = participant.PelaksanaanTes
 
         for (let i = 0; i < questionsCount; i++) {
           const answer = answers[i.toString()];
-          answersArray.push(answer || "");
+          answersArray.push(answer ?? "");
         }
 
         // console.log(`MBTI answers array length: ${answersArray.length}`);
@@ -374,7 +374,7 @@ const status = participant.PelaksanaanTes
           const answerKey = i.toString();
           if (answers[answerKey]) {
             const [np, nk] = answers[answerKey].split(",");
-            discAnswers.push({ np: np || "", nk: nk || "" });
+            discAnswers.push({ np: np ?? "", nk: nk ?? "" });
           } else {
             discAnswers.push({ np: "", nk: "" });
           }
@@ -448,7 +448,7 @@ const status = participant.PelaksanaanTes
           const answersArray: string[] = [];
           for (let i = 1; i <= 60; i++) {
             const answer = answers[i.toString()];
-            answersArray.push(answer || ""); // Use empty string for unanswered questions
+            answersArray.push(answer ?? ""); // Use empty string for unanswered questions
           }
 
           // Calculate TKD score
@@ -478,7 +478,7 @@ const status = participant.PelaksanaanTes
           const answersArray: string[] = [];
           for (let i = 0; i < 100; i++) {
             const answer = answers[i.toString()];
-            answersArray.push(answer || ""); // Use empty string for unanswered questions
+            answersArray.push(answer ?? ""); // Use empty string for unanswered questions
           }
 
           // Calculate KETELITIAN score
@@ -730,7 +730,7 @@ const status = participant.PelaksanaanTes
       isInBreakTime,
       breakTimeLeft: isInBreakTime ? participant.jeda_waktu - currentTime : 0,
       allTestsCompleted,
-      nextTest: availableTests[0] || null,
+      nextTest: availableTests[0] ?? null,
     };
   }),
 });

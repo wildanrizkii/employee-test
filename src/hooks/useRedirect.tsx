@@ -53,7 +53,7 @@ const UseRedirectToNextTest = () => {
                     const currentIndex = cleanedJenisTes.indexOf(activeTes.toUpperCase());
 
                     if (currentIndex !== -1 && currentIndex < cleanedJenisTes.length - 1) {
-                        const nextTes = cleanedJenisTes[currentIndex + 1].toLowerCase();
+                        const nextTes = cleanedJenisTes[currentIndex + 1]!.toLowerCase();
                         console.log('Redirecting to next test:', nextTes);
                         router.push(`/test/${nextTes}`);
                     } else {
@@ -81,7 +81,7 @@ const UseRedirectToNextTest = () => {
                 router.push('/finishtest');
             } else if (currentIndex !== -1 && currentIndex < cleanedJenisTes.length - 1) {
                 // Go to next test
-                const nextTes = cleanedJenisTes[currentIndex + 1].toLowerCase();
+                const nextTes = cleanedJenisTes[currentIndex + 1]!.toLowerCase();
                 console.log('Fallback: Redirecting to next test:', nextTes);
                 router.push(`/test/${nextTes}`);
             } else {

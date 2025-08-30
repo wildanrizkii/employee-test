@@ -261,7 +261,7 @@ export default function MBTI(): JSX.Element {
         setShowConfirmDialog(false)
 
         if (unanswered.length > 0) {
-            setCurrentQuestion(unanswered[0])
+            setCurrentQuestion(unanswered[0]!)
         } else {
             // Convert answers array to object format for backend
             const answersObject: Record<string, string> = {};

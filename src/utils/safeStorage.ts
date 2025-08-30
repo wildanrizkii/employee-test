@@ -28,7 +28,7 @@ export const safeJSONStringify = (
 ): string | null => {
   try {
     const seen = new WeakSet<object>();
-    const replacer = (key: string, value: unknown): unknown => {
+    const replacer = (value: unknown): unknown => {
       if (typeof value === "object" && value !== null) {
         if (seen.has(value)) {
           return "[Circular Reference]";
@@ -496,7 +496,7 @@ export const useClientOnlyStorage = () => {
     storage: isClient
       ? safeStorage
       : ({
-          getItem: <T>(key: string, fallback: T): T => fallback,
+          getItem: <T>(fallback: T): T => fallback,
           setItem: (): boolean => false,
           removeItem: (): boolean => false,
           clear: (): boolean => false,

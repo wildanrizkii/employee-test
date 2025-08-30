@@ -387,7 +387,7 @@ export const useKetelitianResults = () => {
     }[] = [];
 
     questions.forEach((question, index) => {
-      const userAnswer = answers[index] || "";
+      const userAnswer = answers[index] ?? "";
       const isStatementsSame = question.pernyataan1 === question.pernyataan2;
       const correctAnswer = isStatementsSame ? "S" : "T";
       const isCorrect = userAnswer === correctAnswer;

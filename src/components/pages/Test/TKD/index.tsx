@@ -95,9 +95,8 @@ export default function TKDTestRefactored(): JSX.Element {
     // Group questions by jenis
     const groupedData: GroupedData = questions.reduce<GroupedData>((acc, question, index) => {
         const { jenis } = question
-        if (!acc[jenis]) {
-            acc[jenis] = []
-        }
+        acc[jenis] ??= [];
+
         acc[jenis].push({ ...question, overallIndex: index })
         return acc
     }, {})
@@ -160,7 +159,7 @@ export default function TKDTestRefactored(): JSX.Element {
             activeTes: 'TKD',
             jenisTes: listTest,
         })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [submitTestMutation, checkTest?.time, answers]); // Add answers to dependencies
 
     // Auto-submit hook
@@ -191,7 +190,7 @@ export default function TKDTestRefactored(): JSX.Element {
         };
 
         void checkTime();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     // Get current question data safely
@@ -222,7 +221,7 @@ export default function TKDTestRefactored(): JSX.Element {
         if (remaining > 0) {
             setTimeLeft(remaining);
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // Early return for missing question data

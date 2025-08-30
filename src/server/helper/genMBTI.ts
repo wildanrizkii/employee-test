@@ -145,16 +145,16 @@ export function convertMBTI(formattedAnswers: FormattedJawaban): MBTIResult {
 
   // Process bagian3 - take first element of each column
   for (const key of ["kolom1", "kolom2", "kolom3", "kolom4"] as Kolom[]) {
-    sortTipe.bagian3.push(formattedAnswers.bagian3[key][0] || "");
+    sortTipe.bagian3.push(formattedAnswers.bagian3[key][0] ?? "");
   }
 
   // Group by columns across all bagian
   for (let i = 0; i < 4; i++) {
     const kolomKey = `kolom${i + 1}` as keyof typeof tipe;
     tipe[kolomKey] = [
-      sortTipe.bagian1[i],
-      sortTipe.bagian2[i],
-      sortTipe.bagian3[i],
+      sortTipe.bagian1[i]!,
+      sortTipe.bagian2[i]!,
+      sortTipe.bagian3[i]!,
     ];
   }
 
@@ -169,7 +169,7 @@ export function convertMBTI(formattedAnswers: FormattedJawaban): MBTIResult {
     const mode = Mode(tipe[key]);
     if (mode === "0") {
       // If there's a tie, use the third element (bagian3)
-      finalTipe.push(tipe[key][2]);
+      finalTipe.push(tipe[key][2] ?? "");
     } else {
       finalTipe.push(mode);
     }

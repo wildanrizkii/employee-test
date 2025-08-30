@@ -194,9 +194,9 @@ function getTestTypeFromPath(pathname: string): string | null {
   console.log("Path parts:", pathParts);
 
   if (pathParts.length >= 3) {
-    const testType = pathParts[2].toLowerCase();
+    const testType = pathParts[2]?.toLowerCase();
     console.log("Extracted test type:", testType);
-    return testType;
+    return testType!;
   }
 
   console.log("No test type found");

@@ -79,7 +79,7 @@ export const useDISCStore = create<DISCState>()(
                 set((state) => {
                     // Initialize empty answers array when questions are set
                     const newAnswers = questions.map((_, index) => 
-                        state.answers[index] || { np: '', nk: '' }
+                        state.answers[index] ?? { np: '', nk: '' }
                     )
                     return {
                         questions,

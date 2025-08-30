@@ -5,10 +5,6 @@
 import type { NextConfig } from "next";
 import "./src/env";
 
-const nextConfig: NextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ["@prisma/client", "prisma"],
-  },
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;

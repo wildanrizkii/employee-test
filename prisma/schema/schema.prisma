@@ -5,6 +5,14 @@ generator client {
   binaryTargets = ["native", "debian-openssl-3.0.x", "rhel-openssl-3.0.x"]
 }
 
+// generator client {
+//   provider               = "prisma-client-js"
+//   output                 = "../generated"
+//   generatedFileExtension = "ts"
+//   importFileExtension    = "ts"
+//   moduleFormat           = "esm"
+// }
+
 datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")

@@ -53,67 +53,67 @@ export const convertToScore = (data: DiscData) => {
 
   scoreD1.forEach((element) => {
     if (element[0] === data.NP.D && element[1] === "D") {
-      convertNP.push([element[2], "D"]);
+      convertNP.push([element[2]!, "D"]);
     }
   });
 
   scoreI1.forEach((element) => {
     if (element[0] === data.NP.I && element[1] === "I") {
-      convertNP.push([element[2], "I"]);
+      convertNP.push([element[2]!, "I"]);
     }
   });
   scoreS1.forEach((element) => {
     if (element[0] === data.NP.S && element[1] === "S") {
-      convertNP.push([element[2], "S"]);
+      convertNP.push([element[2]!, "S"]);
     }
   });
   scoreC1.forEach((element) => {
     if (element[0] === data.NP.C && element[1] === "C") {
-      convertNP.push([element[2], "C"]);
+      convertNP.push([element[2]!, "C"]);
     }
   });
   //Scoring 2
   scoreD2.forEach((element) => {
     if (element[0] === data.NK.D && element[1] === "D") {
-      convertNK.push([element[2], "D"]);
+      convertNK.push([element[2]!, "D"]);
     }
   });
 
   scoreI2.forEach((element) => {
     if (element[0] === data.NK.I && element[1] === "I") {
-      convertNK.push([element[2], "I"]);
+      convertNK.push([element[2]!, "I"]);
     }
   });
   scoreS2.forEach((element) => {
     if (element[0] === data.NK.S && element[1] === "S") {
-      convertNK.push([element[2], "S"]);
+      convertNK.push([element[2]!, "S"]);
     }
   });
   scoreC2.forEach((element) => {
     if (element[0] === data.NK.C && element[1] === "C") {
-      convertNK.push([element[2], "C"]);
+      convertNK.push([element[2]!, "C"]);
     }
   });
   //Scoring 3
   scoringD3.forEach((element) => {
     if (element[0] === data.Delta.D && element[1] === "D") {
-      convertDelta.push([element[2], "D"]);
+      convertDelta.push([element[2]!, "D"]);
     }
   });
 
   scoringI3.forEach((element) => {
     if (element[0] === data.Delta.I && element[1] === "I") {
-      convertDelta.push([element[2], "I"]);
+      convertDelta.push([element[2]!, "I"]);
     }
   });
   scoringS3.forEach((element) => {
     if (element[0] === data.Delta.S && element[1] === "S") {
-      convertDelta.push([element[2], "S"]);
+      convertDelta.push([element[2]!, "S"]);
     }
   });
   scoringC3.forEach((element) => {
     if (element[0] === data.Delta.C && element[1] === "C") {
-      convertDelta.push([element[2], "C"]);
+      convertDelta.push([element[2]!, "C"]);
     }
   });
 
@@ -138,38 +138,38 @@ export const convertToScore = (data: DiscData) => {
 
   for (let i = 1; i < positiveNP.length; i++) {
     for (let j = 0; j < i; j++) {
-      if (positiveNP[i][0] > positiveNP[j][0]) {
-        const x0 = positiveNP[i][0];
-        const x1 = positiveNP[i][1];
-        positiveNP[i][0] = positiveNP[j][0];
-        positiveNP[i][1] = positiveNP[j][1];
-        positiveNP[j][0] = x0;
-        positiveNP[j][1] = x1;
+      if (positiveNP[i]![0] > positiveNP[j]![0]) {
+        const x0 = positiveNP[i]![0];
+        const x1 = positiveNP[i]![1];
+        positiveNP[i]![0] = positiveNP[j]![0];
+        positiveNP[i]![1] = positiveNP[j]![1];
+        positiveNP[j]![0] = x0;
+        positiveNP[j]![1] = x1;
       }
     }
   }
 
   for (let i = 1; i < positiveNK.length; i++) {
     for (let j = 0; j < i; j++) {
-      if (positiveNK[i][0] > positiveNK[j][0]) {
-        const x0 = positiveNK[i][0];
-        const x1 = positiveNK[i][1];
-        positiveNK[i][0] = positiveNK[j][0];
-        positiveNK[i][1] = positiveNK[j][1];
-        positiveNK[j][0] = x0;
-        positiveNK[j][1] = x1;
+      if (positiveNK[i]![0] > positiveNK[j]![0]) {
+        const x0 = positiveNK[i]![0];
+        const x1 = positiveNK[i]![1];
+        positiveNK[i]![0] = positiveNK[j]![0];
+        positiveNK[i]![1] = positiveNK[j]![1];
+        positiveNK[j]![0] = x0;
+        positiveNK[j]![1] = x1;
       }
     }
   }
   for (let i = 1; i < positiveDelta.length; i++) {
     for (let j = 0; j < i; j++) {
-      if (positiveDelta[i][0] > positiveDelta[j][0]) {
-        const x0 = positiveDelta[i][0];
-        const x1 = positiveDelta[i][1];
-        positiveDelta[i][0] = positiveDelta[j][0];
-        positiveDelta[i][1] = positiveDelta[j][1];
-        positiveDelta[j][0] = x0;
-        positiveDelta[j][1] = x1;
+      if (positiveDelta[i]![0] > positiveDelta[j]![0]) {
+        const x0 = positiveDelta[i]![0];
+        const x1 = positiveDelta[i]![1];
+        positiveDelta[i]![0] = positiveDelta[j]![0];
+        positiveDelta[i]![1] = positiveDelta[j]![1];
+        positiveDelta[j]![0] = x0;
+        positiveDelta[j]![1] = x1;
       }
     }
   }

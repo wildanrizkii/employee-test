@@ -19,7 +19,7 @@ export async function GET(
     // 1. Coba ambil dari Authorization header (untuk fetch/axios requests)
     const authHeader = req.headers.get("Authorization");
     if (authHeader?.startsWith("Bearer ")) {
-      token = authHeader.split(" ")[1];
+      token = authHeader.split(" ")[1]!;
       console.log("Token from header:", token);
     }
 

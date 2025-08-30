@@ -79,7 +79,7 @@ export default function StartPage({ token }: StartPageProps) {
     .filter(Boolean)
 
   const totalDuration = allTests.reduce((total, test) => {
-    const minutes = parseInt(test.duration.split(" ")[0])
+    const minutes = parseInt(test.duration.split(" ")[0]!)
     return total + minutes
   }, 0)
 
