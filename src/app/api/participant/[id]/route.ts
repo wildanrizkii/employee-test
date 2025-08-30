@@ -6,12 +6,9 @@ interface TokenPayload {
   participantId: string;
 }
 
-export async function GET(
-  req: Request,
-  { params }: { params: { id: string } },
-) {
+export async function GET(req: Request, context: { params: { id: string } }) {
   try {
-    const { id } = params;
+    const { id } = context.params;
 
     let isAuthorized = false;
     const authHeader = req.headers.get("Authorization");
