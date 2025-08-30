@@ -1,52 +1,52 @@
-import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import { db } from "@/server/db";
 import { jwtVerify } from "jose";
+import { cookies } from "next/headers";
 
 interface TokenPayload {
   participantId: string;
 }
 
 export async function GET(
-  req: NextRequest,
-  context: { params: Promise<{ id: string }> },
+  req: Request,
+  { params }: { params: Promise<{ id: string }> },
 ) {
   try {
-    // Following Next.js 15+ pattern
-    const { id } = await context.params;
+    const { id } = await params;
 
-    let isAuthorized = false;
-
-    // Get token from cookie
-    const cookieHeader = req.headers.get("Cookie");
     let token: string | null = null;
 
-    if (cookieHeader?.includes("token=")) {
-      const tokenRegex = /token=([^;]+)/;
-      const tokenMatch = tokenRegex.exec(cookieHeader);
-      if (tokenMatch) {
-        token = tokenMatch[1];
-      }
-    }
-
-    // Also check Authorization header as fallback
+    // 1. Coba ambil dari Authorization header (untuk fetch/axios requests)
     const authHeader = req.headers.get("Authorization");
-    if (!token && authHeader?.startsWith("Bearer ")) {
+    if (authHeader?.startsWith("Bearer ")) {
       token = authHeader.split(" ")[1];
+      console.log("Token from header:", token);
     }
 
-    if (token && process.env.JWT_SECRET) {
-      try {
-        const secret = new TextEncoder().encode(process.env.JWT_SECRET);
-        const { payload } = await jwtVerify(token, secret);
-        const decoded = payload as unknown as TokenPayload;
+    // 2. Jika tidak ada di header, coba ambil dari cookie (untuk browser requests)
+    if (!token) {
+      const cookieStore = await cookies();
+      token = cookieStore.get("token")?.value || null;
+      console.log("Token from cookie:", token);
+    }
 
-        if (decoded.participantId === id) {
-          isAuthorized = true;
-        }
-      } catch (err) {
-        console.warn("Invalid or expired token:", err);
-      }
+    if (!token) {
+      return NextResponse.json(
+        { error: "Unauthorized - No token found" },
+        { status: 401 },
+      );
+    }
+
+    if (!process.env.JWT_SECRET) {
+      throw new Error("JWT_SECRET is not defined");
+    }
+
+    const secret = new TextEncoder().encode(process.env.JWT_SECRET);
+    const { payload } = await jwtVerify(token, secret);
+    const decoded = payload as unknown as TokenPayload;
+
+    if (decoded.participantId !== id) {
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
 
     const participant = await db.participant.findUnique({
@@ -61,15 +61,7 @@ export async function GET(
       return NextResponse.json({ error: "Not found" }, { status: 404 });
     }
 
-    if (isAuthorized) {
-      return NextResponse.json(participant);
-    } else {
-      return NextResponse.json({
-        id: participant.id,
-        fullName: participant.NamaLengkap,
-        nik: participant.NIK,
-      });
-    }
+    return NextResponse.json(participant);
   } catch (error) {
     console.error("API Error:", error);
     return NextResponse.json(
