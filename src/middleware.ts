@@ -48,9 +48,11 @@ export async function middleware(request: NextRequest) {
     const { payload } = await jwtVerify(token, secret);
     const decoded = payload as unknown as TokenPayload;
 
-    // Fetch participant data - sekarang API sudah support cookie
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? request.nextUrl.origin;
+    console.log({ baseUrl });
+
     const res = await fetch(
-      `https://employee-test-one.vercel.app/api/participants/${decoded.participantId}`,
+      `${baseUrl}/api/participants/${decoded.participantId}`,
       {
         headers: {
           Cookie: request.headers.get("cookie") ?? "",
