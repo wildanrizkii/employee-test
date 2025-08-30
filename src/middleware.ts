@@ -27,6 +27,11 @@ interface Participant {
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Skip middleware for API routes to avoid infinite loop
+  if (pathname.startsWith("/api/")) {
+    return NextResponse.next();
+  }
+
   // Skip middleware for non-test routes
   if (!pathname.startsWith("/test/")) return NextResponse.next();
 
@@ -43,22 +48,22 @@ export async function middleware(request: NextRequest) {
     const { payload } = await jwtVerify(token, secret);
     const decoded = payload as unknown as TokenPayload;
 
-    // Fetch participant data from database
+    // Fetch participant data - sekarang API sudah support cookie
     const res = await fetch(
-      `${request.nextUrl.origin}/api/participant/${decoded.participantId}`,
+      `${request.nextUrl.origin}/api/participants/${decoded.participantId}`,
       {
         headers: {
-          Authorization: `Bearer ${token}`,
+          Cookie: request.headers.get("cookie") ?? "",
           "Content-Type": "application/json",
         },
       },
     );
 
     if (!res.ok) {
+      console.error("Failed to fetch participant:", res.status, res.statusText);
       return NextResponse.redirect(new URL("/", request.url));
     }
 
-    // const participant: Participant = await res.json();
     const participant = (await res.json()) as Participant;
 
     // Check if participant exists
@@ -184,8 +189,6 @@ export async function middleware(request: NextRequest) {
 }
 
 function getTestTypeFromPath(pathname: string): string | null {
-  // Extract test type from pathname
-  // Examples: /test/mbti -> "mbti", /test/disc -> "disc"
   console.log("Full pathname:", pathname);
   const pathParts = pathname.split("/");
   console.log("Path parts:", pathParts);
@@ -204,20 +207,15 @@ function hasTestAccess(
   participant: Participant,
   testType: string | null,
 ): boolean {
-  // If no specific test type, allow general test access
   if (!testType) return true;
 
-  // Check if participant is not in break time
   const currentTime = Math.floor(Date.now() / 1000);
   const isInBreakTime = participant.jeda_waktu > currentTime;
 
-  // If in break time, deny access to test pages
   if (isInBreakTime) return false;
 
-  // Get participant's available test types
   const availableTestTypes = getParticipantTestTypes(participant);
 
-  // If test type is not in participant's available tests, deny access
   if (!availableTestTypes.includes(testType.toUpperCase())) {
     console.log(`Test ${testType} not available for this participant`);
     return false;
@@ -225,36 +223,24 @@ function hasTestAccess(
 
   switch (testType) {
     case "mbti":
-      // MBTI bisa akses jika time_mbti >= 0 (0 = ready, > 0 = in progress)
       return participant.time_mbti >= 0;
-
     case "disc":
-      // DISC bisa akses jika MBTI sudah selesai (time_mbti == -1) dan time_disc >= 0
       return participant.time_mbti === -1 && participant.time_disc >= 0;
-
     case "tkd":
-      // TKD bisa akses jika DISC sudah selesai (time_disc == -1) dan time_tkd >= 0
       return participant.time_disc === -1 && participant.time_tkd >= 0;
-
     case "ketelitian":
-      // KETELITIAN bisa akses jika TKD sudah selesai (time_tkd == -1) dan time_ketelitian >= 0
       return participant.time_tkd === -1 && participant.time_ketelitian >= 0;
-
     default:
-      // For unknown test types, check IsActive status as fallback
       return participant.IsActive;
   }
 }
 
 function getAvailableTest(participant: Participant): string | null {
-  // Check if participant is in break time
   const currentTime = Math.floor(Date.now() / 1000);
   const isInBreakTime = participant.jeda_waktu > currentTime;
 
-  // If in break time, no test is available
   if (isInBreakTime) return null;
 
-  // Get participant's available test types and check in order
   const participantTestTypes = getParticipantTestTypes(participant);
   const testOrder = ["MBTI", "DISC", "TKD", "KETELITIAN"];
 
@@ -272,11 +258,10 @@ function getAvailableTest(participant: Participant): string | null {
   }
 
   console.log("No tests available");
-  return null; // No available test
+  return null;
 }
 
 function getParticipantTestTypes(participant: Participant): string[] {
-  // Parse JenisTes field to get available test types
   if (!participant.JenisTes) return [];
 
   return participant.JenisTes.split(",").map((test) =>
@@ -304,10 +289,18 @@ function areAllTestsCompleted(participant: Participant): boolean {
     }
   }
 
-  // Ketika semua tes sudah selesai dikerjakan semua
   return true;
 }
 
 export const config = {
-  matcher: ["/test/:path*"],
+  matcher: [
+    /*
+     * Match all request paths except for the ones starting with:
+     * - api (API routes)
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     */
+    "/((?!api/|_next/static|_next/image|favicon.ico).*)",
+  ],
 };
