@@ -1,5 +1,5 @@
 generator client {
-  provider      = "prisma-client-js"
+  provider      = "prisma-client"
   output        = "../generated"
   moduleFormat  = "esm"
   binaryTargets = ["native", "debian-openssl-3.0.x", "rhel-openssl-3.0.x"]
@@ -8,68 +8,4 @@ generator client {
 datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
-}
-
-model Participant {
-  id                  String    @id @default(nanoid(11)) @map("_id")
-  IdDataPelamar       String?   @unique
-  IsActive            Boolean   @default(false)
-  Token               String?
-  NIK                 String
-  PhoneNumber         String
-  NamaLengkap         String
-  TempatLahir         String
-  TanggalLahir        DateTime?
-  Email               String
-  Penempatan          String
-  ProyeksiPenempatan  String?
-  JumlahCakupanBagian String?
-  Bidang              String?
-  JumlahCakupanUnit   String?
-  Cabang              String?
-  JenisTes            String?
-  PelaksanaanTes      DateTime?
-  time_mbti           Int       @default(0)
-  time_disc           Int       @default(0)
-  time_tkd            Int       @default(0)
-  time_ketelitian     Int       @default(0)
-  jeda_waktu          Int       @default(0)
-  token               String?
-  ketelitian          Int       @default(-1)
-  tkd                 Int       @default(-1)
-  statusEmail         Int       @default(0)
-  emailCabang         String?
-  createdAt           DateTime  @default(now())
-  updatedAt           DateTime  @updatedAt
-
-  mbtiId String? @unique
-  mbti   MBTI?   @relation(fields: [mbtiId], references: [id])
-
-  discId String? @unique
-  disc   DISC?   @relation(fields: [discId], references: [id])
-}
-
-model MBTI {
-  id          String       @id @default(nanoid(11)) @map("_id")
-  bagian1     String?
-  bagian2     String?
-  bagian3     String?
-  tipe        String?
-  deskripsi   Json?
-  createdAt   DateTime     @default(now())
-  updatedAt   DateTime     @updatedAt
-  participant Participant?
-}
-
-model DISC {
-  id          String       @id @default(nanoid(11)) @map("_id")
-  NP          Json
-  NK          Json
-  Delta       Json
-  Score       Json
-  JawabanNP   String
-  JawabanNK   String
-  createdAt   DateTime     @default(now())
-  updatedAt   DateTime     @updatedAt
-  participant Participant?
 }
