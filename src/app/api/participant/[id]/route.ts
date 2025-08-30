@@ -3,9 +3,9 @@ import { db } from "@/server/db";
 import { jwtVerify } from "jose";
 import { cookies } from "next/headers";
 
-interface TokenPayload {
-  participantId: string;
-}
+// interface TokenPayload {
+//   participantId: string;
+// }
 
 export async function GET(
   req: Request,
@@ -43,7 +43,9 @@ export async function GET(
 
     const secret = new TextEncoder().encode(process.env.JWT_SECRET);
     const { payload } = await jwtVerify(token, secret);
-    const decoded = payload as unknown as TokenPayload;
+    const decoded = payload;
+
+    console.log({ decoded });
 
     if (decoded.participantId !== id) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
