@@ -8,13 +8,10 @@ interface TokenPayload {
 
 export async function GET(
   req: Request,
-  { params }: { params: Promise<{ id: string }> },
+  { params }: { params: { id: string } },
 ) {
   try {
-    console.log("params:", params);
-    console.log("JWT_SECRET exists:", !!process.env.JWT_SECRET);
-
-    const { id } = await params;
+    const { id } = params;
 
     let isAuthorized = false;
     const authHeader = req.headers.get("Authorization");
@@ -51,10 +48,8 @@ export async function GET(
     }
 
     if (isAuthorized) {
-      // kalau token valid → return full data
       return NextResponse.json(participant);
     } else {
-      // kalau nggak ada token / token invalid → return data minimal
       return NextResponse.json({
         id: participant.id,
         fullName: participant.NamaLengkap,
