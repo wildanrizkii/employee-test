@@ -11,6 +11,9 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> },
 ) {
   try {
+    console.log("params:", params);
+    console.log("JWT_SECRET exists:", !!process.env.JWT_SECRET);
+
     const { id } = await params;
 
     let isAuthorized = false;
