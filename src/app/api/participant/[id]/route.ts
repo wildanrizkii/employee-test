@@ -49,7 +49,7 @@ export async function GET(
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
 
-    const participant = await db.participant.findFirst({
+    const participant = await db.participant.findUnique({
       where: { id },
       include: {
         disc: true,
