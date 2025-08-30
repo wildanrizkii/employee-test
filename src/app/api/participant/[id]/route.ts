@@ -26,7 +26,7 @@ export async function GET(
     // 2. Jika tidak ada di header, coba ambil dari cookie (untuk browser requests)
     if (!token) {
       const cookieStore = await cookies();
-      token = cookieStore.get("token")?.value || null;
+      token = cookieStore.get("token")?.value ?? null;
       console.log("Token from cookie:", token);
     }
 
