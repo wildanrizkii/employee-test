@@ -6,6 +6,7 @@ import { cookies } from "next/headers";
 // interface TokenPayload {
 //   participantId: string;
 // }
+export const runtime = "nodejs";
 
 export async function GET(
   req: Request,
