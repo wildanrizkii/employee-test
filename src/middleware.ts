@@ -52,6 +52,11 @@ export async function middleware(request: NextRequest) {
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? request.nextUrl.origin;
     console.log({ baseUrl });
 
+    console.log(
+      "Fetch URL:",
+      `${baseUrl}/api/participants/${decoded.participantId}`,
+    );
+
     const res = await fetch(
       `${baseUrl}/api/participants/${decoded.participantId}`,
       {
