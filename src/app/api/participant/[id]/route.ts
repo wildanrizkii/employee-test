@@ -52,6 +52,8 @@ export async function GET(
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
 
+    console.log("Sudah sampai sini");
+
     const participant = await db.participant.findUnique({
       where: { id },
       include: {
