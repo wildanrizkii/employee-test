@@ -54,11 +54,11 @@ export async function middleware(request: NextRequest) {
 
     console.log(
       "Fetch URL:",
-      `${baseUrl}/api/participants/${decoded.participantId}`,
+      `${baseUrl}/api/participant/${decoded.participantId}`,
     );
 
     const res = await fetch(
-      `${baseUrl}/api/participants/${decoded.participantId}`,
+      `${baseUrl}/api/participant/${decoded.participantId}`,
       {
         headers: {
           Cookie: request.headers.get("cookie") ?? "",
@@ -301,14 +301,5 @@ function areAllTestsCompleted(participant: Participant): boolean {
 }
 
 export const config = {
-  matcher: [
-    /*
-     * Match all request paths except for the ones starting with:
-     * - api (API routes)
-     * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     */
-    "/((?!api/|_next/static|_next/image|favicon.ico).*)",
-  ],
+  matcher: ["/test/:path*"],
 };

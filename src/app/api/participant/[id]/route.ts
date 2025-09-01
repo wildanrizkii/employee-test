@@ -15,6 +15,8 @@ export async function GET(
   try {
     const { id } = await params;
 
+    console.log("JALAn");
+
     let token: string | null = null;
 
     // 1. Coba ambil dari Authorization header (untuk fetch/axios requests)
