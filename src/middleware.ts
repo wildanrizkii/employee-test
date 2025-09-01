@@ -40,6 +40,7 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
 
   const token = request.cookies.get(constant.token)?.value;
+  console.log("Token: ", token);
   if (!token) return NextResponse.redirect(new URL("/", request.url));
 
   try {
