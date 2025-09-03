@@ -1,4 +1,8 @@
-import { createTRPCRouter, tokenProcedure } from "@/server/api/trpc";
+import {
+  createTRPCRouter,
+  tokenProcedure,
+  publicProcedure,
+} from "@/server/api/trpc";
 import { TRPCError } from "@trpc/server";
 import { type Participant } from "prisma-client";
 import z from "zod";
@@ -101,6 +105,200 @@ const schemaSubmitTest = z.object({
   answers: z.record(z.string()).optional(),
 });
 
+const validateTokenSchema = z.object({
+  participantId: z.string(),
+  token: z.string(),
+});
+
+export const participantRouter = createTRPCRouter({
+  validateToken: publicProcedure
+    .input(validateTokenSchema)
+    .query(async ({ input, ctx }) => {
+      const { participantId, token } = input;
+
+      try {
+        // Find participant by ID
+        const participant = await ctx.db.participant.findUnique({
+          where: {
+            id: participantId,
+          },
+          select: {
+            id: true,
+            Token: true,
+            IsActive: true,
+            NamaLengkap: true,
+            NIK: true,
+            PelaksanaanTes: true,
+          },
+        });
+
+        // Participant existence check
+        const participantExists = !!participant;
+        if (!participantExists) {
+          return {
+            participantExists: false,
+            isActive: false,
+            tokenMatches: false,
+            isTestToday: false,
+            isTestExpired: false,
+            isValidToken: false,
+            error: "PARTICIPANT_NOT_FOUND",
+            message: "Participant not found",
+            participant: null,
+            testStatus: "NO_AVAILABLE",
+          };
+        }
+
+        // Participant active status check
+        const isActive = participant.IsActive;
+        if (!isActive) {
+          return {
+            participantExists: true,
+            isActive: false,
+            tokenMatches: false,
+            isTestToday: false,
+            isTestExpired: false,
+            isValidToken: false,
+            error: "PARTICIPANT_INACTIVE",
+            message: "Participant is not active",
+            participant: {
+              id: participant.id,
+              name: participant.NamaLengkap,
+              nik: participant.NIK,
+            },
+            testStatus: "NO_AVAILABLE",
+          };
+        }
+
+        // Token matching check
+        const tokenMatches = participant.Token === token;
+        if (!tokenMatches) {
+          return {
+            participantExists: true,
+            isActive: true,
+            tokenMatches: false,
+            isTestToday: false,
+            isTestExpired: false,
+            isValidToken: false,
+            error: "TOKEN_MISMATCH",
+            message: "Token doesn't match database record",
+            participant: {
+              id: participant.id,
+              name: participant.NamaLengkap,
+              nik: participant.NIK,
+            },
+            testStatus: "NO_AVAILABLE",
+          };
+        }
+
+        // Test date validation
+        const getTestDateStatus = (date?: Date | null) => {
+          if (!date) {
+            return {
+              status: "NO_AVAILABLE",
+              isTestToday: false,
+              isTestExpired: false,
+            };
+          }
+
+          const iso = new Date(date).toISOString();
+          const batasPelaksanaan = new Date(`${iso.split("T")[0]} 23:59:00`);
+          const today = new Date();
+          const diffTime = batasPelaksanaan.getTime() - Date.now();
+
+          const isTestToday =
+            batasPelaksanaan.toDateString() === today.toDateString();
+
+          if (isTestToday) {
+            const isTestExpired = diffTime < 0;
+            return {
+              status: isTestExpired ? "EXPIRED" : "AVAILABLE",
+              isTestToday: true,
+              isTestExpired,
+            };
+          }
+
+          // Not today - check if it's in the future or past
+          const isTestExpired = diffTime < 0;
+          return {
+            status: isTestExpired ? "EXPIRED" : "NO_AVAILABLE",
+            isTestToday: false,
+            isTestExpired,
+          };
+        };
+
+        const testDateStatus = getTestDateStatus(participant.PelaksanaanTes);
+        const {
+          status: testStatus,
+          isTestToday,
+          isTestExpired,
+        } = testDateStatus;
+
+        // Determine overall validation status
+        const isValidToken =
+          participantExists &&
+          isActive &&
+          tokenMatches &&
+          testStatus === "AVAILABLE";
+
+        // Return comprehensive status
+        return {
+          participantExists: true,
+          isActive: true,
+          tokenMatches: true,
+          isTestToday,
+          isTestExpired,
+          isValidToken,
+          error:
+            testStatus === "AVAILABLE" ? null : getErrorFromStatus(testStatus),
+          message:
+            testStatus === "AVAILABLE"
+              ? "Token validation successful"
+              : getMessageFromStatus(testStatus),
+          participant: {
+            id: participant.id,
+            name: participant.NamaLengkap,
+            nik: participant.NIK,
+          },
+          testStatus,
+          testDate: participant.PelaksanaanTes,
+        };
+      } catch (error) {
+        console.error(
+          "Token validation error:",
+          error instanceof Error ? error.message : String(error),
+        );
+        throw new TRPCError({
+          code: "INTERNAL_SERVER_ERROR",
+          message: "Failed to validate token",
+        });
+      }
+    }),
+});
+
+// Helper functions for error and message mapping
+function getErrorFromStatus(status: string): string {
+  switch (status) {
+    case "NO_AVAILABLE":
+      return "TEST_NOT_AVAILABLE";
+    case "EXPIRED":
+      return "TEST_EXPIRED";
+    default:
+      return "UNKNOWN_ERROR";
+  }
+}
+
+function getMessageFromStatus(status: string): string {
+  switch (status) {
+    case "NO_AVAILABLE":
+      return "Test is not available today";
+    case "EXPIRED":
+      return "Test period has expired";
+    default:
+      return "Unknown error occurred";
+  }
+}
+
 export const testRouter = createTRPCRouter({
   check: tokenProcedure.input(schemaCheck).query(async ({ input, ctx }) => {
     const participant = await ctx.db.participant.findUnique({
@@ -167,9 +365,9 @@ export const testRouter = createTRPCRouter({
     const isInBreakTime =
       participant.jeda_waktu > Math.floor(Date.now() / 1000);
 
-const status = participant.PelaksanaanTes
-  ? getStatusTes(participant.PelaksanaanTes)
-  : "NO_AVAILABLE";
+    const status = participant.PelaksanaanTes
+      ? getStatusTes(participant.PelaksanaanTes)
+      : "NO_AVAILABLE";
 
     return {
       time: participantTime,
@@ -388,16 +586,8 @@ const status = participant.PelaksanaanTes
             discAnswers,
             discQuestionsData,
           );
-          // console.log("Formatted DISC answers:", formattedAnswers);
 
           const discProfile = calculateDISCProfile(formattedAnswers);
-          // console.log("DISC profile calculated:", {
-          //   sortedData: discProfile.sortedData,
-          //   convertedScores: discProfile.convertedScores,
-          //   characterTypes: discProfile.characterTypes,
-          // });
-
-          // Create or update DISC record
           let discRecord;
 
           if (participant.discId) {
@@ -405,7 +595,6 @@ const status = participant.PelaksanaanTes
             discRecord = await ctx.db.dISC.findUnique({
               where: { id: participant.discId },
             });
-            // console.log("DISC record already exists:", discRecord?.id);
           } else {
             // Belum ada DISC, create baru
             discRecord = await ctx.db.dISC.create({
@@ -426,8 +615,6 @@ const status = participant.PelaksanaanTes
                 statusEmail: 1,
               },
             });
-
-            // console.log("DISC record created:", discRecord.id);
           }
         } catch (error) {
           console.error("DISC calculation error:", error);
@@ -457,10 +644,6 @@ const status = participant.PelaksanaanTes
 
           // Update the tkd field with the calculated score (separate from time field)
           updateData.tkd = tkdScore;
-          // console.log(
-          //   "TKD score will be saved to participant.tkd field:",
-          //   tkdScore,
-          // );
         } else {
           console.log(
             `TKD score already exists (${participant.tkd}), skipping update`,

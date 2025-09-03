@@ -27,15 +27,12 @@ interface Participant {
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Skip middleware for API routes to avoid infinite loop
   if (pathname.startsWith("/api/")) {
     return NextResponse.next();
   }
 
-  // Skip middleware for non-test routes
   if (!pathname.startsWith("/test/")) return NextResponse.next();
 
-  // Allow access to expired and completed pages
   if (pathname === "/test/expired" || pathname === "/finishtest")
     return NextResponse.next();
 
@@ -74,12 +71,9 @@ export async function middleware(request: NextRequest) {
 
     const participant = (await res.json()) as Participant;
 
-    // Check if participant exists
     if (!participant) {
       return NextResponse.redirect(new URL("/", request.url));
     }
-
-    // console.log("Participant Data: ", participant);
 
     // Check if participant is in break time
     const currentTime = Math.floor(Date.now() / 1000);
@@ -197,13 +191,10 @@ export async function middleware(request: NextRequest) {
 }
 
 function getTestTypeFromPath(pathname: string): string | null {
-  console.log("Full pathname:", pathname);
   const pathParts = pathname.split("/");
-  console.log("Path parts:", pathParts);
 
   if (pathParts.length >= 3) {
     const testType = pathParts[2]?.toLowerCase();
-    console.log("Extracted test type:", testType);
     return testType!;
   }
 

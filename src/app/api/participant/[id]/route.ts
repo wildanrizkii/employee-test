@@ -6,6 +6,7 @@ import { cookies } from "next/headers";
 // interface TokenPayload {
 //   participantId: string;
 // }
+
 export const runtime = "nodejs";
 
 export async function GET(
@@ -14,23 +15,16 @@ export async function GET(
 ) {
   try {
     const { id } = await params;
-
-    console.log("JALAn");
-
     let token: string | null = null;
 
-    // 1. Coba ambil dari Authorization header (untuk fetch/axios requests)
     const authHeader = req.headers.get("Authorization");
     if (authHeader?.startsWith("Bearer ")) {
       token = authHeader.split(" ")[1]!;
-      console.log("Token from header:", token);
     }
 
-    // 2. Jika tidak ada di header, coba ambil dari cookie (untuk browser requests)
     if (!token) {
       const cookieStore = await cookies();
       token = cookieStore.get("token")?.value ?? null;
-      console.log("Token from cookie:", token);
     }
 
     if (!token) {
@@ -48,13 +42,9 @@ export async function GET(
     const { payload } = await jwtVerify(token, secret);
     const decoded = payload;
 
-    console.log({ decoded });
-
     if (decoded.participantId !== id) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
-
-    console.log("Sudah sampai sini");
 
     const participant = await db.participant.findUnique({
       where: { id },

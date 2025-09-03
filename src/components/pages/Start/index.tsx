@@ -1,9 +1,9 @@
 "use client"
 
-import React, { startTransition, useEffect } from "react"
+import React, { startTransition, useEffect, useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Brain, Target, BrainCircuit, Puzzle, Clock } from "lucide-react"
+import { Brain, Target, BrainCircuit, Puzzle, Clock, Loader2 } from "lucide-react"
 import { decode } from "jsonwebtoken"
 import UserInfo from "./UserInfo"
 import Image from "next/image"
@@ -69,6 +69,7 @@ const testConfig = {
 
 export default function StartPage({ token }: StartPageProps) {
   const dataUser = decode(token) as DecodedToken ?? null
+  const [isLoading, setIsLoading] = useState(false)
 
   const availableTests = dataUser?.listTest
     ? dataUser.listTest.split(",").map((test) => test.trim().toUpperCase())
@@ -100,7 +101,7 @@ export default function StartPage({ token }: StartPageProps) {
 
   if (!dataUser) {
     return (
-      <div className="min-h-screen bg-background flex flex-col items-center justify-center text-center p-4 px-6">
+      <div className="min-h-dvh bg-background flex flex-col items-center justify-center text-center p-4 px-6">
         <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 animate-fade-in relative z-10 mb-4">
           <DotLottieReact
             src="/animations/invalid.lottie"
@@ -225,9 +226,16 @@ export default function StartPage({ token }: StartPageProps) {
             Klik tombol di bawah ini ketika Anda sudah siap untuk memulai tes
           </p>
 
-          <Button asChild className="w-full sm:w-auto sm:min-w-64 h-12 sm:h-14 px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] cursor-pointer">
+          <Button asChild disabled={isLoading} onClick={() => setIsLoading(true)} className="w-full sm:w-auto sm:min-w-64 h-12 sm:h-14 px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] cursor-pointer">
             <Link href={`/test/mbti`}>
-              Mulai Tes Sekarang
+              {isLoading ? (
+                <span className="flex items-center gap-2">
+                  <Loader2 className="w-5 h-5 animate-spin" />
+                  Memulai Tes...
+                </span>
+              ) : (
+                "Mulai Tes Sekarang"
+              )}
             </Link>
           </Button>
 

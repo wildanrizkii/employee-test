@@ -86,7 +86,7 @@ export default function KetelitianTest(): JSX.Element {
         if (remaining > 0) {
             setTimeLeft(remaining);
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // Load data from project files
@@ -125,7 +125,7 @@ export default function KetelitianTest(): JSX.Element {
 
     useEffect(() => {
         void loadDataFromFiles()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const updateTimeMutation = api.test.updateTime.useMutation({
@@ -177,7 +177,7 @@ export default function KetelitianTest(): JSX.Element {
         };
 
         void checkTime();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     // Convert answers array to object format for backend
@@ -240,7 +240,7 @@ export default function KetelitianTest(): JSX.Element {
             activeTes: 'KETELITIAN',
             jenisTes: listTest,
         })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [submitTestMutation, checkTest?.time, answers])
 
     const handleConfirmSubmit = async () => {
@@ -386,12 +386,12 @@ export default function KetelitianTest(): JSX.Element {
                     </CardHeader>
                     <CardContent className="space-y-6">
                         <div className="space-y-4">
-                            <p className="text-lg font-medium mb-4">
+                            <p className="text-md sm:text-lg font-medium mb-4">
                                 Apakah kedua pernyataan ini sama atau berbeda?
                             </p>
 
                             <div className="bg-muted/50 p-6 rounded-lg">
-                                <div className="flex flex-wrap items-center justify-center gap-4 text-2xl font-mono text-center">
+                                <div className="flex flex-col sm:flex-row items-center sm:justify-center gap-4 text-xl sm:text-2xl font-mono text-center">
                                     <span className="bg-white px-4 py-2 rounded border break-words max-w-full sm:max-w-xs">
                                         {currentQuestionData.pernyataan1}
                                     </span>
@@ -402,11 +402,10 @@ export default function KetelitianTest(): JSX.Element {
                                 </div>
                             </div>
 
-
                             <div className="flex gap-2">
                                 <button
                                     onClick={() => handleAnswerSelect('S')}
-                                    className={`flex-1 p-6 rounded-lg border-2 cursor-pointer transition-all duration-200 flex justify-center items-center gap-3 
+                                    className={`flex-1 p-4 sm:p-6 rounded-lg border-2 cursor-pointer transition-all duration-200 flex justify-center items-center gap-3 
       ${answers[currentQuestion] === 'S'
                                             ? "border-primary bg-primary/10 shadow-md"
                                             : "border-border hover:border-primary/50 hover:shadow-sm"
@@ -421,12 +420,12 @@ export default function KetelitianTest(): JSX.Element {
                                                 }`}
                                         />
                                     )}
-                                    <span className="text-lg font-medium">SAMA</span>
+                                    <span className="text-md sm:text-lg font-medium">SAMA</span>
                                 </button>
 
                                 <button
                                     onClick={() => handleAnswerSelect('T')}
-                                    className={`flex-1 p-6 rounded-lg border-2 cursor-pointer transition-all duration-200 flex justify-center items-center gap-3 
+                                    className={`flex-1 p-4 sm:p-6 rounded-lg border-2 cursor-pointer transition-all duration-200 flex justify-center items-center gap-3 
       ${answers[currentQuestion] === 'T'
                                             ? "border-primary bg-primary/10 shadow-md"
                                             : "border-border hover:border-primary/50 hover:shadow-sm"
@@ -441,9 +440,10 @@ export default function KetelitianTest(): JSX.Element {
                                                 }`}
                                         />
                                     )}
-                                    <span className="text-lg font-medium">TIDAK SAMA</span>
+                                    <span className="text-md sm:text-lg font-medium">TIDAK SAMA</span>
                                 </button>
                             </div>
+
 
 
                         </div>

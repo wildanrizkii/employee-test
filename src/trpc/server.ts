@@ -28,7 +28,6 @@ const createContext = cache(async () => {
   const cookieStore = (await cookies()).get(constant.token);
 
   const token = cookieStore ? cookieStore.value : directToken;
-  // console.log("token", token);
   heads.set("x-trpc-source", "rsc");
   heads.set("Authorization", token);
   return createTRPCContext({

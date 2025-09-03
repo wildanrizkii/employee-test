@@ -67,8 +67,6 @@ export function TRPCReactProvider(props: { children: React.ReactNode }) {
             if (token) {
               headers.set("Authorization", token);
             }
-            console.log("token", token);
-
 
             return headers;
           },
